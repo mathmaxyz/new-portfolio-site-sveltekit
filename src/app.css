@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+	--light-green: #D7E0E0;
+	--dark-green: #314444;
+	--mid-green: #587979;
+	--grid-green: #BBCECE;
+}
+
+body{
+	background-color: var(--light-green);
+	background-size: 40px 40px;
+	background-image: linear-gradient(to right, var(--grid-green) 1px, transparent 1px), linear-gradient(to bottom, #BBCECE 1px, transparent 1px);
+	animation: scroll-grid 90s linear infinite;
+}
+
+@keyframes scroll-grid{
+	0%{ background-position: 0 0, 0 0; }
+	100%{ background-position: 400px 400px, 400px 400px; }
+}
+
+.content{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1{
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 4.5rem;
+	color: var(--dark-green);
+	margin: 5px;
+}
+
+h2{
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: 300;
+	font-size: 2rem;
+	color: var(--mid-green);
+	margin: 20px 5px 0 5px;
+	text-align: right;
+}
+
+p {
+	font-family: "Roboto Condensed", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	margin: 0 0 0 5px;
+	font-size: 18px;
+	color: var(--dark-green);
+}
+
+.glitch{
+	position: relative;
+	display: inline-block;
+	color: transparent;
+}
+
+.glitch:before, .glitch:after{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: var(--dark-green);
+}
+
+.glitch:before{
+	clip-path: inset(0 0 50% 0);
+	animation: glitch-top 15s infinite step-end;
+}
+
+.glitch:after{
+	clip-path: inset(50% 0 0 0);
+	animation: glitch-bottom 15s infinite step-end;
+}
+
+@keyframes glitch-top{
+	0%, 100%{ transform: translateX(0); }
+	20%{ transform: translateX(-4px); }
+	21%{ transform: translateX(0); }
+	52%{ transform: translateX(5px); }
+	53%{ transform: translateX(0); }
+	78%{ transform: translateX(-3px); }
+	79%{ transform: translateX(0); }
+}
+
+@keyframes glitch-bottom{
+	0%, 100%{ transform: translateX(0); }
+	20%{ transform: translateX(4px); }
+	21%{ transform: translateX(0); }
+	52%{ transform: translateX(-5px); }
+	53%{ transform: translateX(0); }
+	78%{ transform: translateX(3px); }
+	79%{ transform: translateX(0); }
+}
