@@ -19,7 +19,7 @@ body{
 	100%{ background-position: 400px 400px, 400px 400px; }
 }
 
-.content{
+.page-context{
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -49,6 +49,13 @@ p {
 	margin: 0 0 0 5px;
 	font-size: 18px;
 	color: var(--dark-green);
+}
+
+
+button {
+	background: none;
+	border: none;
+	margin-top: 10px;
 }
 
 .glitch{

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import Nav from '$lib/nav.svelte';
 
 	let { children } = $props();
 </script>
@@ -10,4 +11,7 @@
 	<title>Max Hope-Carter</title>
 </svelte:head>
 
-{@render children()}
+<Nav></Nav>
+<div class="page-context">
+	{@render children()}
+</div>
