@@ -2,9 +2,7 @@
 	let { data } = $props();
 </script>
 
-<a class="section-heading-link" href="/blog">
-	<span class="section-heading">Recent writing</span>
-</a>
+<h2 class="section-heading section-heading-right">Writing</h2>
 
 <ul class="post-list">
 	{#each data.posts as post}

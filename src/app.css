@@ -1,70 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
 	--light-green: #D7E0E0;
 	--dark-green: #314444;
 	--mid-green: #587979;
 	--grid-green: #BBCECE;
+	--font-display: "Bebas Neue", sans-serif;
+	--font-body: "Roboto Condensed", sans-serif;
 }
 
-body{
+body {
 	background-color: var(--light-green);
 	background-size: 40px 40px;
-	background-image: linear-gradient(to right, var(--grid-green) 1px, transparent 1px), linear-gradient(to bottom, #BBCECE 1px, transparent 1px);
+	background-image:
+		linear-gradient(to right, var(--grid-green) 1px, transparent 1px),
+		linear-gradient(to bottom, var(--grid-green) 1px, transparent 1px);
 	animation: scroll-grid 90s linear infinite;
+	font-family: var(--font-body);
+	color: var(--dark-green);
 }
 
-@keyframes scroll-grid{
-	0%{ background-position: 0 0, 0 0; }
-	100%{ background-position: 400px 400px, 400px 400px; }
+@keyframes scroll-grid {
+	0% { background-position: 0 0, 0 0; }
+	100% { background-position: 400px 400px, 400px 400px; }
 }
 
-.page-context{
+/* Layout */
+
+.page-content {
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
-h1{
-	font-family: "Bebas Neue", sans-serif;
+/* Typography */
+
+.heading {
+	font-family: var(--font-display);
 	font-weight: 400;
-	font-style: normal;
 	font-size: 4.5rem;
 	color: var(--dark-green);
 	margin: 5px;
 }
 
-h2{
-	font-family: "Bebas Neue", sans-serif;
+.section-heading {
+	font-family: var(--font-display);
 	font-weight: 300;
 	font-size: 2rem;
 	color: var(--mid-green);
 	margin: 20px 5px 0 5px;
+}
+
+.section-heading-right {
 	text-align: right;
 }
 
-p {
-	font-family: "Roboto Condensed", sans-serif;
+.section-heading-link {
+	text-decoration: none;
+	display: block;
+	text-align: right;
+}
+
+.tagline {
 	font-optical-sizing: auto;
 	font-weight: 400;
-	margin: 0 0 0 5px;
 	font-size: 18px;
+	margin: 0 0 0 5px;
+}
+
+.meta-text {
+	font-size: 0.9rem;
+	color: var(--mid-green);
+	white-space: nowrap;
+}
+
+/* Post list */
+
+.post-list {
+	list-style: none;
+	padding: 0;
+}
+
+.post-list li {
+	margin-bottom: 1.5rem;
+}
+
+.post-link {
+	text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 1rem;
+}
+
+.post-title {
+	font-family: var(--font-display);
+	font-size: 1.5rem;
 	color: var(--dark-green);
 }
 
+.post-excerpt {
+	margin: 0.25rem 0 0 0;
+	color: var(--mid-green);
+}
 
-button {
+/* Audio button */
+
+.audio-btn {
 	background: none;
 	border: none;
 	margin-top: 10px;
 }
 
-.glitch{
+/* Glitch effect */
+
+.glitch {
 	position: relative;
 	display: inline-block;
 	color: transparent;
 }
 
-.glitch:before, .glitch:after{
+.glitch:before, .glitch:after {
 	content: attr(data-text);
 	position: absolute;
 	top: 0;
@@ -73,32 +128,39 @@ button {
 	color: var(--dark-green);
 }
 
-.glitch:before{
+.glitch:before {
 	clip-path: inset(0 0 50% 0);
 	animation: glitch-top 15s infinite step-end;
 }
 
-.glitch:after{
+.glitch:after {
 	clip-path: inset(50% 0 0 0);
 	animation: glitch-bottom 15s infinite step-end;
 }
 
-@keyframes glitch-top{
-	0%, 100%{ transform: translateX(0); }
-	20%{ transform: translateX(-4px); }
-	21%{ transform: translateX(0); }
-	52%{ transform: translateX(5px); }
-	53%{ transform: translateX(0); }
-	78%{ transform: translateX(-3px); }
-	79%{ transform: translateX(0); }
+@keyframes glitch-top {
+	0%, 100% { transform: translateX(0); }
+	20% { transform: translateX(-4px); }
+	21% { transform: translateX(0); }
+	52% { transform: translateX(5px); }
+	53% { transform: translateX(0); }
+	78% { transform: translateX(-3px); }
+	79% { transform: translateX(0); }
 }
 
-@keyframes glitch-bottom{
-	0%, 100%{ transform: translateX(0); }
-	20%{ transform: translateX(4px); }
-	21%{ transform: translateX(0); }
-	52%{ transform: translateX(-5px); }
-	53%{ transform: translateX(0); }
-	78%{ transform: translateX(3px); }
-	79%{ transform: translateX(0); }
+@keyframes glitch-bottom {
+	0%, 100% { transform: translateX(0); }
+	20% { transform: translateX(4px); }
+	21% { transform: translateX(0); }
+	52% { transform: translateX(-5px); }
+	53% { transform: translateX(0); }
+	78% { transform: translateX(3px); }
+	79% { transform: translateX(0); }
+}
+
+/* Prose (blog post body) */
+
+.prose {
+	margin-top: 1.5rem;
+	line-height: 1.6;
 }

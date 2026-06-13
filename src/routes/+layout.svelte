@@ -12,6 +12,6 @@
 </svelte:head>
 
 <Nav></Nav>
-<div class="page-context">
+<div class="page-content">
 	{@render children()}
 </div>
