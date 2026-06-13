@@ -11,7 +11,7 @@
 	<title>Max Hope-Carter</title>
 </svelte:head>
 
-<Nav></Nav>
 <div class="page-content">
+	<Nav></Nav>
 	{@render children()}
 </div>

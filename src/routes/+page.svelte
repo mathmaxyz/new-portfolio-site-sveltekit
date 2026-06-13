@@ -17,3 +17,5 @@
 		</li>
 	{/each}
 </ul>
+
+<h2 class="section-heading section-heading-right">Projects</h2>
