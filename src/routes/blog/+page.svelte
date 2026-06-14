@@ -2,7 +2,7 @@
 	let { data } = $props();
 </script>
 
-<h2 class="section-heading section-heading-right">Writing</h2>
+<h2 class="section-heading section-heading-right">writing</h2>
 
 <ul class="post-list">
 	{#each data.posts as post}

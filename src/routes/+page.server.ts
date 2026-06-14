@@ -1,6 +1,10 @@
 import { remark } from 'remark';
 import remarkExcerpt from '@stefanprobst/remark-excerpt';
 
+async function loadPosts() {
+	//I want to split loading posts and loading projects into their own function and then add those to the main load function for clarity.	
+}
+
 export async function load() {
 	const posts = import.meta.glob('/src/posts/*.md', { eager: true });
 	const rawPosts = import.meta.glob('/src/posts/*.md', { eager: true, query: '?raw', import: 'default' });
