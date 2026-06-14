@@ -47,7 +47,6 @@ body {
 	font-weight: 300;
 	font-size: 2rem;
 	color: var(--mid-green);
-	margin: 20px 5px 0 5px;
 }
 
 .section-heading-right {
@@ -57,14 +56,14 @@ body {
 .section-heading-link {
 	text-decoration: none;
 	display: block;
-	text-align: right;
 }
 
 .tagline {
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-size: 18px;
-	margin: 0 0 0 5px;
+	margin: 0 0 0 0;
+	color: var(--mid-green);
 }
 
 .meta-text {
@@ -95,7 +94,7 @@ body {
 .post-title {
 	font-family: var(--font-display);
 	font-size: 1.5rem;
-	color: var(--dark-green);
+	color: var(--mid-green);
 }
 
 .post-excerpt {
