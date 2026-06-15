@@ -20,6 +20,10 @@ body {
 	color: var(--dark-green);
 }
 
+button{
+	cursor: pointer;
+}
+
 @keyframes scroll-grid {
 	0% { background-position: 0 0, 0 0; }
 	100% { background-position: 400px 400px, 400px 400px; }
@@ -107,6 +111,7 @@ body {
 .audio-btn {
 	background: none;
 	border: none;
+	padding: 0 3px 2px 0;
 }
 
 /* Glitch effect */
