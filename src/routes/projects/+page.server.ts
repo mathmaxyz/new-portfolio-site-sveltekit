@@ -8,11 +8,12 @@ export async function load() {
 				title: mod.metadata.title,
 				description: mod.metadata.description,
 				index: mod.metadata.index,
+				thumbnail: mod.metadata.thumbnail,
 			};
 		})
 	);
 
-	allProjects.sort((a, b) => b.index - a.index);
+	allProjects.sort((a, b) => a.index - b.index);
 
 	return { projects: allProjects };
 }
