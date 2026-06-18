@@ -12,6 +12,14 @@
 				<p>
 					{project.description}
 				</p>
+				<div class="tech-stack-wrapper">
+					{#each project.stack as tech}
+						<div class="tech-stack">
+							<img class="tech-icon" src={`/tech_stack/${tech}.svg`} />
+							<span class="tech-stack-text">{tech + ' '}</span>
+						</div>
+					{/each}
+				</div>
 			</div>
 			<img class="project-thumbnail" src={project.thumbnail} />
 		</li>
@@ -78,5 +86,27 @@
 
 	.project-link {
 		text-decoration: none;
+	}
+
+	.tech-stack-text {
+		color: var(--light-green);
+		text-transform: capitalize;
+	}
+
+	.tech-icon {
+		width: 20px;
+		height: 20px;
+		margin-right: 5px;
+		fill: var(--light-green);
+	}
+
+	.tech-stack {
+		display: flex;
+		align-items: center;
+		margin-left: 10px;
+	}
+
+	.tech-stack-wrapper {
+		display: flex;
 	}
 </style>
