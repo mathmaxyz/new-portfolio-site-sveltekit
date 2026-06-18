@@ -76,6 +76,10 @@ button{
 	white-space: nowrap;
 }
 
+.embed-link {
+	color: var(--dark-green);
+}
+
 /* Post list */
 
 .post-list {
@@ -104,6 +108,7 @@ button{
 .post-excerpt {
 	margin: 0.25rem 0 0 0;
 	color: var(--mid-green);
+	font-size: 18px;
 }
 
 /* Audio button */
