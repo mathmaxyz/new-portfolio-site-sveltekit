@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { MediaQuery } from 'svelte/reactivity';
+	import PauseIcon from '$lib/icons/controls/pause.svg?component';
+	import PlayIcon from '$lib/icons/controls/play.svg?component';
+	import Stickmen from '$lib/icons/controls/stickmen1.svg?component';
 
 	let audio: HTMLAudioElement | undefined = $state();
 	let playing = $state(false);
@@ -34,14 +37,11 @@
 		<div class="nav-top-row">
 			<h1 class="heading glitch" data-text="Max Hope-Carter">Max Hope-Carter</h1>
 			<audio bind:this={audio} id="music-player" src="/helpless_chase.mp3"></audio>
+			<Stickmen height="80"></Stickmen>
 			{#if playing}
-				<button class="audio-btn" onclick={pauseMusic}
-					><img width="50px" height="50px" src="/pause1.svg" alt="Pause" /></button
-				>
+				<button class="audio-btn" onclick={pauseMusic}><PauseIcon width="50" height="50" /></button>
 			{:else}
-				<button class="audio-btn" onclick={playMusic}
-					><img width="50px" height="50px" src="/play2.svg" alt="Play" /></button
-				>
+				<button class="audio-btn" onclick={playMusic}><PlayIcon width="50" height="50" /></button>
 			{/if}
 		</div>
 		<p class="tagline">Software engineer | Music producer | Designer</p>

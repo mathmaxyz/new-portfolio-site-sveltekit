@@ -2,6 +2,7 @@ import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-auto';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import svg from '@poppanator/sveltekit-svg';
 
 export default defineConfig({
 	plugins: [
@@ -18,6 +19,19 @@ export default defineConfig({
 			adapter: adapter(),
 			preprocess: [mdsvex({ extensions: ['.svx', '.md'] })],
 			extensions: ['.svelte', '.svx', '.md']
+		}),
+		svg({
+			includePaths: ['src/lib/icons/tech_stack/'],
+			svgoOptions: {
+				plugins: [
+					{ name: 'preset-default' },
+					{ name: 'removeAttrs', params: { attrs: '(fill|stroke)' } }
+				]
+			}
+		}),
+		svg({
+			includePaths: ['src/lib/icons/controls/'],
+			svgoOptions: false
 		})
 	]
 });

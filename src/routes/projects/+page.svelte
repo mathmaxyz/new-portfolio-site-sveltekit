@@ -1,5 +1,17 @@
-<script>
+<script lang="ts">
+	import type { Component } from 'svelte';
+
 	let { data } = $props();
+
+	const techIcons: Record<string, { default: Component }> = import.meta.glob(
+		'$lib/icons/tech_stack/*.svg',
+		{ query: '?component', eager: true }
+	);
+
+	function getIcon(name: string): Component | undefined {
+		const key = `/src/lib/icons/tech_stack/${name}.svg`;
+		return techIcons[key]?.default;
+	}
 </script>
 
 <ul class="project-list">
@@ -14,8 +26,11 @@
 				</p>
 				<div class="tech-stack-wrapper">
 					{#each project.stack as tech}
+						{@const Icon = getIcon(tech)}
 						<div class="tech-stack">
-							<img class="tech-icon" src={`/tech_stack/${tech}.svg`} />
+							{#if Icon}
+								<Icon width="20" height="20" />
+							{/if}
 							<span class="tech-stack-text">{tech + ' '}</span>
 						</div>
 					{/each}
@@ -93,9 +108,7 @@
 		text-transform: capitalize;
 	}
 
-	.tech-icon {
-		width: 20px;
-		height: 20px;
+	.tech-stack :global(svg) {
 		margin-right: 5px;
 		fill: var(--light-green);
 	}
