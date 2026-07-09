@@ -38,8 +38,8 @@
 			<h1 class="heading glitch" data-text="Max Hope-Carter">Max Hope-Carter</h1>
 			<audio bind:this={audio} id="music-player" src="/helpless_chase.mp3"></audio>
 			<div class="stickmen" class:playing>
-					<Stickmen height="80"></Stickmen>
-				</div>
+				<Stickmen height="80"></Stickmen>
+			</div>
 			{#if playing}
 				<button class="audio-btn" onclick={pauseMusic}><PauseIcon width="50" height="50" /></button>
 			{:else}
@@ -80,6 +80,30 @@
 <style>
 	.stickmen {
 		--beat: 0.423s;
+		transform: scaleY(0);
+		transform-origin: bottom;
+	}
+
+	.stickmen.playing {
+		animation: 1s ease-out forwards stretchup;
+	}
+
+	@keyframes stretchup {
+		0% {
+			transform: scaleY(0);
+		}
+		60% {
+			transform: scaleY(1.15);
+		}
+		75% {
+			transform: scaleY(0.95);
+		}
+		85% {
+			transform: scaleY(1.05);
+		}
+		100% {
+			transform: scaleY(1);
+		}
 	}
 
 	:global(.playing #head1) {
