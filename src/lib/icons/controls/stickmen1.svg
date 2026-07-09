@@ -1,35 +1,50 @@
 <svg width="448" height="157" viewBox="0 0 448 157" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_25_137)">
-<circle cx="105.5" cy="61.5" r="20" stroke="#314444" stroke-width="5"/>
-<line x1="2.5" y1="-2.5" x2="43.5435" y2="-2.5" transform="matrix(0.623956 -0.78146 0.65345 0.75697 63.6355 114.991)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="23.6866" y2="-2.5" transform="matrix(-0.954686 0.297615 -0.219283 -0.975661 86 106)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="23.6866" y2="-2.5" transform="matrix(-0.827425 0.561576 -0.492688 -0.870206 63.6675 111.234)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="27.624" y2="-2.5" transform="matrix(-0.94415 -0.329517 0.352892 -0.935664 86.4416 81.9264)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="27.624" y2="-2.5" transform="matrix(-0.794386 -0.607413 0.626978 -0.779037 110.93 100.367)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="24.4543" y2="-2.5" transform="matrix(-0.339536 0.940593 -0.932455 -0.361286 58.0478 72)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="23.5573" y2="-2.5" transform="matrix(-0.78279 -0.622285 0.612355 -0.790583 128.397 114.215)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="31.3273" y2="-2.5" transform="matrix(-0.324219 -0.945982 0.896528 -0.442988 97.2984 138)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="31.3273" y2="-2.5" transform="matrix(0.926151 -0.377153 0.492937 0.870065 18 140.491)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<circle cx="226.474" cy="30.0873" r="20" transform="rotate(-41.0058 226.474 30.0873)" stroke="#314444" stroke-width="5"/>
-<line x1="2.5" y1="-2.5" x2="29.3294" y2="-2.5" transform="matrix(0.00781088 -0.999969 0.982218 -0.187742 208.707 144.71)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="28.3318" y2="-2.5" transform="matrix(-0.0294094 -0.999567 -0.992926 -0.118731 250.246 143.7)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="43.5435" y2="-2.5" transform="matrix(-0.04188 -0.999123 0.989796 0.142489 229.979 97.9224)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="27.3081" y2="-2.5" transform="matrix(-0.789487 0.613767 -0.483707 -0.87523 227.489 95.5859)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="29.874" y2="-2.5" transform="matrix(0.803113 0.595827 0.501531 -0.86514 228.956 95.5918)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="27.624" y2="-2.5" transform="matrix(-0.928704 0.370823 -0.347616 -0.937637 225.494 58.0068)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="27.624" y2="-2.5" transform="matrix(-0.81623 0.577726 -0.557252 -0.830344 250.01 41.4814)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="274.429" y1="26.3772" x2="249.452" y2="44.8114" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="31.5598" y2="-2.5" transform="matrix(0.331202 0.94356 -0.929434 0.368989 186.956 40.8811)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<circle cx="360.443" cy="124.264" r="20" transform="rotate(160.938 360.443 124.264)" stroke="#314444" stroke-width="5"/>
-<line x1="2.5" y1="-2.5" x2="43.5435" y2="-2.5" transform="matrix(-0.334525 0.942387 -0.864837 -0.502052 382.542 60.0336)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="27.3081" y2="-2.5" transform="matrix(0.961653 -0.274269 0.121589 0.99258 383.979 63.1313)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="29.874" y2="-2.5" transform="matrix(0.00787219 -0.999969 -0.994487 0.104862 382.012 64.0878)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="27.624" y2="-2.5" transform="matrix(0.999995 0.00309893 -0.0279635 0.999609 371.785 98.733)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="27.624" y2="-2.5" transform="matrix(0.97299 -0.230846 0.20658 0.97843 342.87 104.9)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="27.624" y2="-2.5" transform="matrix(0.97299 -0.230846 0.20658 0.97843 316.395 111.669)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="24.4543" y2="-2.5" transform="matrix(-0.964395 -0.264467 0.28679 -0.957993 424.389 100.739)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="28.3318" y2="-2.5" transform="matrix(-0.35989 0.932995 -0.975957 -0.217961 418.252 25.7148)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
-<line x1="2.5" y1="-2.5" x2="28.3318" y2="-2.5" transform="matrix(0.0879814 0.996122 0.998181 0.0602931 384.25 2.71478)" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<circle id="head1" cx="105.5" cy="61.5" r="20" stroke="#314444" stroke-width="5"/>
+<line id="torso1" x1="63.5618" y1="111.1449" x2="89.1711" y2="79.0711" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<line id="thighr1" x1="84.1615" y1="109.1832" x2="63.9349" y2="115.4886" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<line id="thighl2" x1="62.8307" y1="114.8135" x2="45.3003" y2="126.7113" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<g class="arm1">
+	<g class="arm1 arml1">
+		<line id="bicepl1" x1="83.199" y1="83.4418" x2="59.4782" y2="75.163" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+		<line id="forearml1" x1="59.5301" y1="75.2547" x2="52.0758" y2="95.9048" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+	</g>
+	<g class="armr1">
+		<line id="bicepr1" x1="107.3766" y1="100.7961" x2="87.4184" y2="85.5354" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+	px 	<line id="forearmr1" x1="124.9091" y1="114.6357" x2="108.4257" y2="101.5321" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+	</g>
+</g>
+<line id="shinr1" x1="94.2465" y1="136.7425" x2="84.9002" y2="109.4724" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<line id="shinl1" x1="19.083" y1="137.373" x2="45.7815" y2="126.5007" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<circle id="head2" cx="226.474" cy="30.0873" r="20" stroke="#314444" stroke-width="5"/>
+<line id="shinl2" x1="206.271" y1="142.6794" x2="206.4805" y2="115.8509" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<line id="shinr2" x1="252.6548" y1="141.4979" x2="251.8951" y2="115.6773" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<line id="torso2" x1="227.3998" y1="95.0684" x2="225.6809" y2="54.0609" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<line id="thighl2" x1="226.7245" y1="99.3084" x2="207.1389" y2="114.5348" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<line id="thighr2" x1="229.71" y1="99.2442" x2="251.6944" y2="115.5544" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<line id="bicepl2" x1="224.0413" y1="61.2779" x2="200.7085" y2="70.5945" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<line id="forearml2" x1="190.1076" y1="42.3175" x2="199.7323" y2="69.7372" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<line id="bicepr2" x1="249.3626" y1="45.0016" x2="228.8556" y2="59.5164" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<line id="forearmr2" x1="274.429" y1="26.3772" x2="249.452" y2="44.8114" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+<g class="man3">
+	<circle id="head3" cx="360.443" cy="124.264" r="20" stroke="#314444" stroke-width="5"/>
+	<g class="body3">
+		<line id="torso3" x1="383.8678" y1="63.6447" x2="370.1377" y2="102.3236" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+		<g class="legr3">
+			<line id="thighr3" x1="386.0792" y1="59.9642" x2="409.9359" y2="53.1601" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+			<line id="shinr3" x1="419.7922" y1="28.5922" x2="410.4956" y2="52.6931" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+		</g>
+		<g class="legl3">
+			<line id="thighl3" x1="384.5179" y1="61.3257" x2="384.7334" y2="33.9526" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+			<line id="shinl3" x1="381.9745" y1="5.0544" x2="384.2472" y2="30.786" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+		</g>
+		<g class="arml3">
+			<line id="bicepl3" x1="344.786" y1="101.8768" x2="369.2314" y2="96.077" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+			<line id="forearml3" x1="318.311" y1="108.6458" x2="342.7564" y2="102.846" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+		</g>
+		<line id="forearmr3" x1="421.261" y1="102.4728" x2="400.0884" y2="96.6666" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+		<line id="bicepr3" x1="374.3549" y1="96.2417" x2="399.4788" y2="96.3196" stroke="#314444" stroke-width="5" stroke-linecap="round"/>
+	</g>
 </g>
 <defs>
 <clipPath id="clip0_25_137">

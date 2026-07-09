@@ -76,6 +76,318 @@
 </div>
 
 <style>
+	:global(#head1) {
+		animation:
+			0.5s infinite alternate follow,
+			0.25s infinite alternate bob;
+		animation-composition: add;
+	}
+
+	:global(#torso1) {
+		transform-box: view-box;
+		transform-origin: 63.5618px 111.1449px;
+		animation: 0.5s infinite alternate benddown;
+	}
+
+	:global(.arm1) {
+		animation: 0.5s infinite alternate follow;
+	}
+
+	:global(.arml1) {
+		transform-box: view-box;
+		transform-origin: 83.199px 83.4418px;
+		animation: 0.5s infinite ease-in-out alternate oneeightyneg;
+		animation-composition: add;
+	}
+
+	:global(.armr1) {
+		transform-box: view-box;
+		transform-origin: 83.199px 83.4418px;
+		animation: 0.5s infinite ease-in-out alternate oneeightypos;
+		animation-composition: add;
+	}
+
+	:global(#forearml1) {
+		transform-box: view-box;
+		transform-origin: 59.5301px 75.2547px;
+		animation: 0.5s infinite alternate swingstraight;
+	}
+
+	:global(#forearmr1) {
+		transform-box: view-box;
+		transform-origin: 108.4257px 101.5321px;
+		animation: 0.5s infinite alternate swingbent;
+	}
+
+	:global(#bicepl2) {
+		transform-box: view-box;
+		transform-origin: 224.0413px 61.2779px;
+		animation: 0.5s infinite alternate seventybend;
+	}
+
+	:global(#forearml2) {
+		transform-box: view-box;
+		transform-origin: 199.7323px 69.7372px;
+		animation:
+			0.5s infinite alternate followshoulder,
+			0.5s infinite alternate elbowbendneg;
+		animation-composition: add;
+	}
+
+	:global(#bicepr2) {
+		transform-box: view-box;
+		transform-origin: 228.8556px 59.5164px;
+		animation: 0.5s infinite alternate seventybend;
+	}
+
+	:global(#forearmr2) {
+		transform-box: view-box;
+		transform-origin: 249.452px 44.8114px;
+		animation:
+			0.5s infinite alternate followshoulderpos,
+			0.5s infinite alternate elbowbendneg;
+		animation-composition: add;
+	}
+
+	:global(.man3) {
+		animation: 1s infinite alternate roll;
+	}
+
+	:global(.body3) {
+		transform-box: view-box;
+		transform-origin: 370.1377px 102.3236px;
+		animation: 1s infinite alternate wobble;
+	}
+
+	:global(.legr3) {
+		transform-box: view-box;
+		transform-origin: 386.0792px 59.9642px;
+		animation: 1s infinite alternate wobbleleg;
+	}
+
+	:global(.legl3) {
+		transform-box: view-box;
+		transform-origin: 384.5179px 61.3257px;
+		animation: 1s infinite alternate wobblelegl;
+	}
+
+	:global(.arml3) {
+		transform-box: view-box;
+		transform-origin: 369.2314px 96.077px;
+		animation: 1s infinite alternate ease-in-out shakearm;
+	}
+
+	/* :global(.armr1) {
+		transform-box: view-box;
+		transform-origin: 87.4184px 85.5354px;
+		animation: 1s infinite spin;
+	} */
+
+	@keyframes -global-wobbleleg {
+		from {
+			rotate: 0deg;
+		}
+		to {
+			rotate: 30deg;
+		}
+	}
+
+	@keyframes -global-wobblelegl {
+		from {
+			rotate: 0deg;
+		}
+		to {
+			rotate: -20deg;
+		}
+	}
+
+	@keyframes -global-shakearm {
+		0% {
+			rotate: 0deg;
+		}
+		50% {
+			rotate: 0deg;
+		}
+		85% {
+			rotate: 0deg;
+		}
+		90% {
+			rotate: 10deg;
+		}
+		95% {
+			rotate: 0deg;
+		}
+		100% {
+			rotate: 10deg;
+		}
+	}
+
+	@keyframes -global-wobble {
+		0% {
+			rotate: 0deg;
+		}
+
+		100% {
+			rotate: 30deg;
+		}
+	}
+
+	@keyframes -global-roll {
+		from {
+			translate: -50px 0px;
+		}
+		to {
+			translate: -10px 0px;
+		}
+	}
+
+	@keyframes -global-followshoulderpos {
+		form {
+			translate: 0px 0px;
+		}
+		to {
+			translate: 3px 29px;
+		}
+	}
+
+	@keyframes -global-elbowbendpos {
+		from {
+			rotate: 0deg;
+		}
+		to {
+			rotate: 20deg;
+		}
+	}
+
+	@keyframes -global-seventybend {
+		from {
+			rotate: 0deg;
+		}
+		to {
+			rotate: 70deg;
+		}
+	}
+
+	@keyframes -global-followshoulder {
+		from {
+			translate: 0px 0px;
+		}
+		to {
+			translate: 5px -29px;
+		}
+	}
+
+	@keyframes -global-elbowbendneg {
+		from {
+			rotate: 0deg;
+		}
+		to {
+			rotate: -20deg;
+		}
+	}
+
+	@keyframes -global-follow {
+		from {
+			translate: 0px 0px;
+		}
+		to {
+			translate: 8px 8px;
+		}
+	}
+
+	@keyframes -global-bob {
+		from {
+			translate: 7px 7px;
+		}
+		to {
+			translate: 0px 0px;
+		}
+	}
+
+	@keyframes -global-benddown {
+		from {
+			rotate: 0deg;
+		}
+		to {
+			rotate: 20deg;
+		}
+	}
+
+	@keyframes -global-oneeightyneg {
+		0% {
+			rotate: 0deg;
+		}
+		15% {
+			rotate: 0deg;
+		}
+		85% {
+			rotate: -180deg;
+		}
+		100% {
+			rotate: -180deg;
+		}
+	}
+
+	@keyframes -global-oneeightypos {
+		0% {
+			rotate: 0deg;
+		}
+		15% {
+			rotate: 0deg;
+		}
+		85% {
+			rotate: 180deg;
+		}
+		100% {
+			rotate: 180deg;
+		}
+	}
+
+	@keyframes -global-swingstraight {
+		0% {
+			rotate: 0deg;
+		}
+		25% {
+			rotate: 0deg;
+		}
+		50% {
+			rotate: 45deg;
+		}
+		75% {
+			rotate: 90deg;
+		}
+		100% {
+			rotate: 90deg;
+		}
+	}
+
+	@keyframes -global-swingbent {
+		0% {
+			rotate: 0deg;
+		}
+		25% {
+			rotate: 0deg;
+		}
+		50% {
+			rotate: -45deg;
+		}
+		75% {
+			rotate: -90deg;
+		}
+		100% {
+			rotate: -90deg;
+		}
+	}
+
+	@keyframes -global-spin {
+		from {
+			rotate: 0deg;
+		}
+		to {
+			rotate: 360deg;
+		}
+	}
+
 	.nav {
 		padding-bottom: 10px;
 	}
