@@ -37,7 +37,9 @@
 		<div class="nav-top-row">
 			<h1 class="heading glitch" data-text="Max Hope-Carter">Max Hope-Carter</h1>
 			<audio bind:this={audio} id="music-player" src="/helpless_chase.mp3"></audio>
-			<Stickmen height="80"></Stickmen>
+			<div class="stickmen" class:playing>
+					<Stickmen height="80"></Stickmen>
+				</div>
 			{#if playing}
 				<button class="audio-btn" onclick={pauseMusic}><PauseIcon width="50" height="50" /></button>
 			{:else}
@@ -76,105 +78,109 @@
 </div>
 
 <style>
-	:global(#head1) {
+	.stickmen {
+		--beat: 0.423s;
+	}
+
+	:global(.playing #head1) {
 		animation:
-			0.5s infinite alternate follow,
-			0.25s infinite alternate bob;
+			var(--beat) infinite alternate follow,
+			calc(var(--beat) / 2) infinite alternate bob;
 		animation-composition: add;
 	}
 
-	:global(#torso1) {
+	:global(.playing #torso1) {
 		transform-box: view-box;
 		transform-origin: 63.5618px 111.1449px;
-		animation: 0.5s infinite alternate benddown;
+		animation: var(--beat) infinite alternate benddown;
 	}
 
-	:global(.arm1) {
-		animation: 0.5s infinite alternate follow;
+	:global(.playing .arm1) {
+		animation: var(--beat) infinite alternate follow;
 	}
 
-	:global(.arml1) {
+	:global(.playing .arml1) {
 		transform-box: view-box;
 		transform-origin: 83.199px 83.4418px;
-		animation: 0.5s infinite ease-in-out alternate oneeightyneg;
+		animation: var(--beat) infinite ease-in-out alternate oneeightyneg;
 		animation-composition: add;
 	}
 
-	:global(.armr1) {
+	:global(.playing .armr1) {
 		transform-box: view-box;
 		transform-origin: 83.199px 83.4418px;
-		animation: 0.5s infinite ease-in-out alternate oneeightypos;
+		animation: var(--beat) infinite ease-in-out alternate oneeightypos;
 		animation-composition: add;
 	}
 
-	:global(#forearml1) {
+	:global(.playing #forearml1) {
 		transform-box: view-box;
 		transform-origin: 59.5301px 75.2547px;
-		animation: 0.5s infinite alternate swingstraight;
+		animation: var(--beat) infinite alternate swingstraight;
 	}
 
-	:global(#forearmr1) {
+	:global(.playing #forearmr1) {
 		transform-box: view-box;
 		transform-origin: 108.4257px 101.5321px;
-		animation: 0.5s infinite alternate swingbent;
+		animation: var(--beat) infinite alternate swingbent;
 	}
 
-	:global(#bicepl2) {
+	:global(.playing #bicepl2) {
 		transform-box: view-box;
 		transform-origin: 224.0413px 61.2779px;
-		animation: 0.5s infinite alternate seventybend;
+		animation: var(--beat) infinite alternate seventybend;
 	}
 
-	:global(#forearml2) {
+	:global(.playing #forearml2) {
 		transform-box: view-box;
 		transform-origin: 199.7323px 69.7372px;
 		animation:
-			0.5s infinite alternate followshoulder,
-			0.5s infinite alternate elbowbendneg;
+			var(--beat) infinite alternate followshoulder,
+			var(--beat) infinite alternate elbowbendneg;
 		animation-composition: add;
 	}
 
-	:global(#bicepr2) {
+	:global(.playing #bicepr2) {
 		transform-box: view-box;
 		transform-origin: 228.8556px 59.5164px;
-		animation: 0.5s infinite alternate seventybend;
+		animation: var(--beat) infinite alternate seventybend;
 	}
 
-	:global(#forearmr2) {
+	:global(.playing #forearmr2) {
 		transform-box: view-box;
 		transform-origin: 249.452px 44.8114px;
 		animation:
-			0.5s infinite alternate followshoulderpos,
-			0.5s infinite alternate elbowbendneg;
+			var(--beat) infinite alternate followshoulderpos,
+			var(--beat) infinite alternate elbowbendneg;
 		animation-composition: add;
 	}
 
-	:global(.man3) {
-		animation: 1s infinite alternate roll;
+	:global(.playing .man3) {
+		animation: calc(var(--beat) * 2) infinite alternate roll;
 	}
 
-	:global(.body3) {
+	:global(.playing .body3) {
 		transform-box: view-box;
 		transform-origin: 370.1377px 102.3236px;
-		animation: 1s infinite alternate wobble;
+		animation: calc(var(--beat) * 2) infinite alternate wobble;
 	}
 
-	:global(.legr3) {
+	:global(.playing .legr3) {
 		transform-box: view-box;
 		transform-origin: 386.0792px 59.9642px;
-		animation: 1s infinite alternate wobbleleg;
+		animation: calc(var(--beat) * 2) infinite alternate wobbleleg;
 	}
 
-	:global(.legl3) {
+	:global(.playing .legl3) {
 		transform-box: view-box;
 		transform-origin: 384.5179px 61.3257px;
-		animation: 1s infinite alternate wobblelegl;
+		animation: calc(var(--beat) * 2) infinite alternate wobblelegl;
 	}
 
-	:global(.arml3) {
+	:global(.playing .arml3) {
 		transform-box: view-box;
 		transform-origin: 369.2314px 96.077px;
-		animation: 1s infinite alternate ease-in-out shakearm;
+		animation: calc(var(--beat) * 2) infinite alternate ease-in-out shakearm;
 	}
 
 	/* :global(.armr1) {
