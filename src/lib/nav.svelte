@@ -82,6 +82,7 @@
 		--beat: 0.423s;
 		transform: scaleY(0);
 		transform-origin: bottom;
+		animation: 1s forwards squashdown;
 	}
 
 	.stickmen.playing {
@@ -103,6 +104,15 @@
 		}
 		100% {
 			transform: scaleY(1);
+		}
+	}
+
+	@keyframes squashdown {
+		0% {
+			transform: scaleY(1);
+		}
+		100% {
+			transform: scaleY(0);
 		}
 	}
 
