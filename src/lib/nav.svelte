@@ -42,9 +42,9 @@
 				<Stickmen></Stickmen>
 			</div>
 			{#if playing}
-				<button class="audio-btn" onclick={pauseMusic}><PauseIcon width="50" height="50" /></button>
+				<button class="audio-btn" onclick={pauseMusic}><PauseIcon /></button>
 			{:else}
-				<button class="audio-btn" onclick={playMusic}><PlayIcon width="50" height="50" /></button>
+				<button class="audio-btn" onclick={playMusic}><PlayIcon /></button>
 			{/if}
 		</div>
 		<p class="tagline">Software engineer | Music producer | Designer</p>
@@ -109,6 +109,11 @@
 	.audio-btn {
 		flex-shrink: 0;
 		margin-left: auto;
+	}
+
+	.audio-btn :global(svg) {
+		width: clamp(1.35rem, 5.3vw, 50px);
+		height: clamp(1.35rem, 5.3vw, 50px);
 	}
 	.nav-buttons {
 		margin-top: 15px;
