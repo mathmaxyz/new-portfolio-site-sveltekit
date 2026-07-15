@@ -4,7 +4,6 @@
 	transform-origin: bottom;
 	animation: 1s forwards squashdown;
 	position: relative;
-	bottom: 8px;
 }
 
 .stickmen.playing {

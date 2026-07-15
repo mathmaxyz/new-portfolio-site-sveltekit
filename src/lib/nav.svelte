@@ -85,7 +85,6 @@
 
 	.nav-top-row {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
 		min-width: 0;
 	}
@@ -99,6 +98,7 @@
 		flex-shrink: 1;
 		min-width: 0;
 		height: 80px;
+		margin-left: 10px;
 	}
 
 	.stickmen :global(svg) {
@@ -108,6 +108,7 @@
 
 	.audio-btn {
 		flex-shrink: 0;
+		margin-left: auto;
 	}
 	.nav-buttons {
 		margin-top: 15px;
