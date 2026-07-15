@@ -3,8 +3,7 @@
 	import { MediaQuery } from 'svelte/reactivity';
 	import PauseIcon from '$lib/icons/controls/pause.svg?component';
 	import PlayIcon from '$lib/icons/controls/play.svg?component';
-	import Stickmen from '$lib/icons/controls/stickmen1.svg?component';
-	import '$lib/stickmen-animations.css';
+
 
 	let audio: HTMLAudioElement | undefined = $state();
 	let playing = $state(false);
@@ -38,10 +37,7 @@
 		<div class="nav-top-row">
 			<h1 class="heading glitch" data-text="Max Hope-Carter">Max Hope-Carter</h1>
 			<audio bind:this={audio} id="music-player" src="/helpless_chase.mp3"></audio>
-			<div class="stickmen" class:playing>
-				<Stickmen></Stickmen>
-			</div>
-			{#if playing}
+{#if playing}
 				<button class="audio-btn" onclick={pauseMusic}><PauseIcon /></button>
 			{:else}
 				<button class="audio-btn" onclick={playMusic}><PlayIcon /></button>
@@ -94,19 +90,7 @@
 		flex-shrink: 1;
 	}
 
-	.stickmen {
-		flex-shrink: 1;
-		min-width: 0;
-		height: 80px;
-		margin-left: 10px;
-	}
-
-	.stickmen :global(svg) {
-		height: 100%;
-		width: auto;
-	}
-
-	.audio-btn {
+.audio-btn {
 		flex-shrink: 0;
 		margin-left: auto;
 	}
