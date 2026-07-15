@@ -39,7 +39,7 @@
 			<h1 class="heading glitch" data-text="Max Hope-Carter">Max Hope-Carter</h1>
 			<audio bind:this={audio} id="music-player" src="/helpless_chase.mp3"></audio>
 			<div class="stickmen" class:playing>
-				<Stickmen height="80"></Stickmen>
+				<Stickmen></Stickmen>
 			</div>
 			{#if playing}
 				<button class="audio-btn" onclick={pauseMusic}><PauseIcon width="50" height="50" /></button>
@@ -87,6 +87,27 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		min-width: 0;
+	}
+
+	.nav-top-row :global(.heading) {
+		min-width: 0;
+		flex-shrink: 1;
+	}
+
+	.stickmen {
+		flex-shrink: 1;
+		min-width: 0;
+		height: 80px;
+	}
+
+	.stickmen :global(svg) {
+		height: 100%;
+		width: auto;
+	}
+
+	.audio-btn {
+		flex-shrink: 0;
 	}
 	.nav-buttons {
 		margin-top: 15px;
@@ -108,7 +129,7 @@
 	.section-heading-button {
 		background: var(--dark-green);
 		border: none;
-		margin: 15px 0 0 0;
+		margin: 1fr 0 0 0;
 		display: flex;
 		justify-content: space-evenly;
 		width: 100%;

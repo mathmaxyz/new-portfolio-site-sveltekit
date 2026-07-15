@@ -35,16 +35,15 @@ button{
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 1rem;
+	overflow-x: hidden;
 }
-
-
 
 /* Typography */
 
 .heading {
 	font-family: var(--font-display);
 	font-weight: 400;
-	font-size: 4.5rem;
+	font-size: clamp(2rem, 8vw, 75px);
 	color: var(--dark-green);
 	margin: 0;
 }
