@@ -81,13 +81,13 @@
 
 .playing #bicepl2 {
 	transform-box: view-box;
-	transform-origin: 224.0413px 61.2779px;
+	transform-origin: 224.0413px 71.2779px;
 	animation: var(--beat) infinite alternate seventybend;
 }
 
 .playing #forearml2 {
 	transform-box: view-box;
-	transform-origin: 199.7323px 69.7372px;
+	transform-origin: 199.7323px 79.7372px;
 	animation:
 		var(--beat) infinite alternate followshoulder,
 		var(--beat) infinite alternate elbowbendneg;
@@ -96,13 +96,13 @@
 
 .playing #bicepr2 {
 	transform-box: view-box;
-	transform-origin: 228.8556px 59.5164px;
+	transform-origin: 228.8556px 69.5164px;
 	animation: var(--beat) infinite alternate seventybend;
 }
 
 .playing #forearmr2 {
 	transform-box: view-box;
-	transform-origin: 249.452px 44.8114px;
+	transform-origin: 249.452px 54.8114px;
 	animation:
 		var(--beat) infinite alternate followshoulderpos,
 		var(--beat) infinite alternate elbowbendneg;
@@ -121,13 +121,13 @@
 
 .playing .legr3 {
 	transform-box: view-box;
-	transform-origin: 386.0792px 59.9642px;
+	transform-origin: 386.0792px 64.9642px;
 	animation: calc(var(--beat) * 2) infinite alternate wobbleleg;
 }
 
 .playing .legl3 {
 	transform-box: view-box;
-	transform-origin: 384.5179px 61.3257px;
+	transform-origin: 384.5179px 66.3257px;
 	animation: calc(var(--beat) * 2) infinite alternate wobblelegl;
 }
 
