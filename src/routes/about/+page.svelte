@@ -41,6 +41,15 @@
 		align-items: flex-start;
 	}
 
+	@media (max-width: 769px) {
+		.about-wrapper {
+			margin: 10px 0 10px 0;
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: flex-start;
+		}
+	}
+
 	.about-image {
 		width: 40%;
 		border-top: 50px solid var(--dark-green);
@@ -48,5 +57,12 @@
 		border-left: 10px solid var(--dark-green);
 		border-right: 10px solid var(--dark-green);
 		margin: 5px 30px 0 0;
+	}
+
+	@media (max-width: 769px) {
+		.about-image {
+			width: 100%;
+			margin-top: 20px;
+		}
 	}
 </style>
