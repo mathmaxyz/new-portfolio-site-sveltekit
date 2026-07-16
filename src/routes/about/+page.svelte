@@ -10,9 +10,9 @@
 		<br />
 		<br />
 
-		I have over 3 years experience building enterprise software at large companies like Universal
-		Music Group and Marks and Spencers, but even longer being a curious programmer, using the
-		internet as a canvas and contributing to open source Japanese language learning tools.
+		I have over 3 years experience building enterprise software in Java, Python, React, Angular and
+		more at large companies like Universal Music Group, but even longer being a curious programmer,
+		using the internet as a canvas and contributing to open source Japanese language learning tools.
 
 		<br />
 		<br />
