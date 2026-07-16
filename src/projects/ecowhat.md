@@ -5,6 +5,7 @@ description: Website that aggregates MP voting data on environmental policies, k
 index: 2
 thumbnail: /ecowhat.jpg
 stack: ["react", "java", "spring", "postgresql"]
+github: https://github.com/mathmaxyz/EcoWhat
 ---
 
 <!-- excerpt -->

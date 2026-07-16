@@ -9,7 +9,8 @@ export async function load() {
 				description: mod.metadata.description,
 				index: mod.metadata.index,
 				thumbnail: mod.metadata.thumbnail,
-				stack: mod.metadata.stack
+				stack: mod.metadata.stack,
+				github: mod.metadata.github
 			};
 		})
 	);

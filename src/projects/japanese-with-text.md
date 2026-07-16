@@ -5,6 +5,7 @@ description: A tool for learning Japanese language with articles using Natural L
 index: 0
 thumbnail: /dokumate.jpg
 stack: ["nextjs", "python", "docker", "postgresql"]
+github: https://github.com/mathmaxyz/japanese-with-text
 ---
 
 <!-- excerpt -->

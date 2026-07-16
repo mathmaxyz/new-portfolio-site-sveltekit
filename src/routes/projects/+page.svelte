@@ -18,7 +18,7 @@
 	{#each data.projects as project}
 		<li class="project-entry">
 			<div class="project-overlay">
-				<a class="project-link" href="/blog/{project.slug}">
+				<a class="project-link" href={project.github}>
 					<span class="project-overlay-title">{project.title}</span>
 				</a>
 				<p>
