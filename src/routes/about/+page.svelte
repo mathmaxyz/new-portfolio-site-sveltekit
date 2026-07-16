@@ -10,42 +10,27 @@
 		<br />
 		<br />
 
-		All I wanted to do since I was a kid was make a book or an album or a video game or a business
-		or a painting... Terrified of leaving nothing special behind after me.
+		I have over 3 years experience building enterprise software at large companies like Universal
+		Music Group and Marks and Spencers, but even longer being a curious programmer, using the
+		internet as a canvas and contributing to open source Japanese language learning tools.
 
 		<br />
 		<br />
 
-		I became a software engineer because I saw computers and the internet as the ultimate canvas, a
-		panacea of knowledge sharing, and a living, breathing community. Tech felt optimistic and
-		liberating, and the internet was a wave you surfed into the unknown, rather than a curated feed
-		you scrolled.
-
-		<br />
-		<br />
-
-		This website is an attempt to contribute to the "lower internet" or "<a
-			class="embed-link"
-			href="https://zsrobinson.com/posts/the-tiny-internet/">tiny internet</a
+		I hope for this website to not only be a portfolio, but a home on the streets of the "lower
+		internet" or "<a class="embed-link" href="https://zsrobinson.com/posts/the-tiny-internet/"
+			>tiny internet</a
 		>". A place where people are radically creating a generous, curious and distributed internet
 		again.
 
 		<br />
 		<br />
 
-		It is a blog (yes, like its 2005), a showcase of my creations (click that big play button!!),
-		and it's full of easter eggs to rewards curiosity.
-
-		<br />
-		<br />
-
 		If you want to contact me for collaboration oppurtunities please go to my contact page. I am
 		very open to new work.
-
 		<br />
 		<br />
-
-		Thank you for coming to my corner of the internet.
+		In the meantime, I hope you enjoy reading my updates on projects and listening to my music.
 	</p>
 </div>
 
