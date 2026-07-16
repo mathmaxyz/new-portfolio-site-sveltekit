@@ -4,7 +4,6 @@
 	import PauseIcon from '$lib/icons/controls/pause.svg?component';
 	import PlayIcon from '$lib/icons/controls/play.svg?component';
 
-
 	let audio: HTMLAudioElement | undefined = $state();
 	let playing = $state(false);
 	let showMenu = $state(false);
@@ -37,7 +36,7 @@
 		<div class="nav-top-row">
 			<h1 class="heading glitch" data-text="Max Hope-Carter">Max Hope-Carter</h1>
 			<audio bind:this={audio} id="music-player" src="/helpless_chase.mp3"></audio>
-{#if playing}
+			{#if playing}
 				<button class="audio-btn" onclick={pauseMusic}><PauseIcon /></button>
 			{:else}
 				<button class="audio-btn" onclick={playMusic}><PlayIcon /></button>
@@ -90,7 +89,7 @@
 		flex-shrink: 1;
 	}
 
-.audio-btn {
+	.audio-btn {
 		flex-shrink: 0;
 		margin-left: auto;
 	}
@@ -112,6 +111,7 @@
 	}
 
 	.menu-button {
+		margin-top: 10px;
 		display: flex;
 		justify-content: center;
 	}
