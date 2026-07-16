@@ -32,6 +32,15 @@ export default defineConfig({
 		svg({
 			includePaths: ['src/lib/icons/controls/'],
 			svgoOptions: false
+		}),
+		svg({
+			includePaths: ['src/lib/icons/contact-methods'],
+			svgoOptions: {
+				plugins: [
+					{ name: 'preset-default' },
+					{ name: 'removeAttrs', params: { attrs: '(fill|stroke)' } }
+				]
+			}
 		})
 	]
 });
