@@ -1,9 +1,5 @@
 <div class="about-wrapper">
-	<img
-		alt="The future you get is the future you create"
-		class="about-image"
-		src="/th_future_you_get.jpg"
-	/>
+	<img alt="The future you get is the future you create" class="about-image" src="/me_detail.png" />
 	<p class="post-excerpt">
 		My name is Max and I make things.
 
@@ -51,11 +47,9 @@
 	}
 
 	.about-image {
-		width: 40%;
-		border-top: 50px solid var(--dark-green);
-		border-bottom: 20px solid var(--dark-green);
-		border-left: 10px solid var(--dark-green);
-		border-right: 10px solid var(--dark-green);
+		width: 30%;
+		padding: 5px;
+		border: 3px dashed var(--mid-green);
 		margin: 5px 30px 0 0;
 	}
 
