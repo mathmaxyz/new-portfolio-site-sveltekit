@@ -55,7 +55,7 @@
 		</div>
 		{#if showMenu}
 			<div class="menu">
-				{#each [['/', 'About'], ['/blog', 'writing'], ['/projects', 'projects'], ['/contact', 'contact'], ['/minigame', '???']] as [href, label]}
+				{#each [['/', 'About'], ['/blog', 'writing'], ['/projects', 'projects'], ['/contact', 'contact'], ['/minigame']] as [href, label]}
 					<a class="section-heading-link" class:active={isActive(href)} {href} onclick={toggleMenu}>
 						<span class="section-heading">{label}</span>
 					</a>
@@ -64,7 +64,7 @@
 		{/if}
 	{:else}
 		<div class="nav-buttons">
-			{#each [['/', 'About'], ['/blog', 'writing'], ['/projects', 'projects'], ['/contact', 'contact'], ['/minigame', '???']] as [href, label]}
+			{#each [['/', 'About'], ['/blog', 'writing'], ['/projects', 'projects'], ['/contact', 'contact'], ['/minigame']] as [href, label]}
 				<a class="section-heading-link" class:active={isActive(href)} {href}>
 					<span class="section-heading">{label}</span>
 				</a>
@@ -133,10 +133,15 @@
 		display: flex;
 		flex-direction: column;
 		background: var(--dark-green);
+		padding-bottom: 20px;
 	}
 
 	.menu .section-heading {
 		color: var(--light-green);
+	}
+
+	.menu .section-heading-link {
+		margin-left: 20px;
 	}
 
 	.menu .section-heading-link.active {
