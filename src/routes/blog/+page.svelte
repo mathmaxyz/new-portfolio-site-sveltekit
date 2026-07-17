@@ -3,7 +3,7 @@
 </script>
 
 <ul class="post-list">
-	{#each data.posts as post}
+	{#each data.posts as post, i}
 		<li>
 			<a class="post-link" href="/blog/{post.slug}">
 				<span class="post-title">{post.title}</span>

@@ -99,13 +99,28 @@ button{
 
 .meta-text {
 	font-size: 0.9rem;
-	color: var(--mid-green);
+	color: var(--light-green);
 	white-space: nowrap;
+	background: var(--light-green-transparent);
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
 }
 
 .embed-link {
 	color: var(--dark-green);
 }
+
+/* Light and dark */
+
+.light {
+	background: var(--light-green-transparent);
+}
+
+.dark {
+	background: var(--mid-green-transparent);
+}
+
 
 /* Post list */
 
@@ -123,19 +138,26 @@ button{
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
-	gap: 1rem;
+	align-items: stretch;
+	border: 5px solid var(--mid-green-transparent);
 }
 
 .post-title {
 	font-family: var(--font-display);
 	font-size: 1.5rem;
-	color: var(--mid-green);
+	color: var(--light-green);
+	background: var(--mid-green-transparent);
+	flex-grow: 1;
+	padding: 0 0 0 10px;
 }
 
 .post-excerpt {
-	margin: 0.25rem 0 0 0;
+	margin: 0;
 	color: var(--mid-green);
 	font-size: 18px;
+	padding: 10px;
+	border: 5px solid var(--mid-green-transparent);
+	border-top: none;
 }
 
 /* Audio button */

@@ -110,14 +110,6 @@
 		color: var(--light-green);
 	}
 
-	.light {
-		background: var(--light-green-transparent);
-	}
-
-	.dark {
-		background: var(--mid-green-transparent);
-	}
-
 	.about-blurb {
 		background: rgba(88, 121, 121, 0.8);
 		color: var(--light-green);
