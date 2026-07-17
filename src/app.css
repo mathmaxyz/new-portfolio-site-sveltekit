@@ -38,6 +38,29 @@ button{
 	margin: 0 auto;
 	padding: 0 1rem;
 	overflow-x: hidden;
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-content {
+	flex: 1;
+}
+
+.footer {
+	bottom: 0;
+	width: 100%;
+	padding: 30px 0 10px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-link {
+	color: var(--mid-green);
+}
+
+.footer-copyright {
+	color: var(--mid-green);
 }
 
 /* Typography */
