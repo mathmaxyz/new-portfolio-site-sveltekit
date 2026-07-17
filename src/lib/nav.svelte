@@ -12,7 +12,7 @@
 
 	function isActive(href: string) {
 		const path = page.url.pathname;
-		if (href === '/') return path === '/' || path.startsWith('/blog');
+		if (href === '/') return path === '/';
 		return path.startsWith(href);
 	}
 
@@ -55,7 +55,7 @@
 		</div>
 		{#if showMenu}
 			<div class="menu">
-				{#each [['/', 'writing'], ['/projects', 'projects'], ['/about', 'About'], ['/contact', 'contact'], ['/minigame', '???']] as [href, label]}
+				{#each [['/', 'About'], ['/blog', 'writing'], ['/projects', 'projects'], ['/contact', 'contact'], ['/minigame', '???']] as [href, label]}
 					<a class="section-heading-link" class:active={isActive(href)} {href} onclick={toggleMenu}>
 						<span class="section-heading">{label}</span>
 					</a>
@@ -64,7 +64,7 @@
 		{/if}
 	{:else}
 		<div class="nav-buttons">
-			{#each [['/', 'writing'], ['/projects', 'projects'], ['/about', 'About'], ['/contact', 'contact'], ['/minigame', '???']] as [href, label]}
+			{#each [['/', 'About'], ['/blog', 'writing'], ['/projects', 'projects'], ['/contact', 'contact'], ['/minigame', '???']] as [href, label]}
 				<a class="section-heading-link" class:active={isActive(href)} {href}>
 					<span class="section-heading">{label}</span>
 				</a>
