@@ -46,15 +46,9 @@
 		list-style: none;
 		padding: 0;
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 1fr;
 		grid-auto-rows: 300px;
 		gap: 20px;
-	}
-
-	@media (max-width: 768px) {
-		.project-list {
-			grid-template-columns: 1fr;
-		}
 	}
 
 	.project-overlay-title {
@@ -84,11 +78,11 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		background: var(--dark-green);
+		background: var(--mid-green);
 	}
 
 	.project-overlay:hover {
-		opacity: 75%;
+		background: var(--mid-green-transparent);
 	}
 
 	.project-overlay p {

@@ -111,11 +111,11 @@
 	}
 
 	.light {
-		background: rgba(88, 121, 121, 0.8);
+		background: var(--light-green-transparent);
 	}
 
 	.dark {
-		background: rgba(49, 68, 68, 0.8);
+		background: var(--mid-green-transparent);
 	}
 
 	.about-blurb {
