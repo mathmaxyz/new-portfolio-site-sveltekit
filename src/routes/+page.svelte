@@ -20,7 +20,7 @@
 		</div>
 		<div class="row-title dark">Curriculum Vitae:</div>
 		<div class="row-fact dark">
-			<a href="/CV.pdf" class="light-link" target="_blank"> View Here</a>
+			<a href="/CV.pdf" class="light-link hover-link" target="_blank"> View Here</a>
 		</div>
 		<div class="row-title light">Additional Skills:</div>
 		<div class="row-fact light">
@@ -34,15 +34,15 @@
 	<br />
 	<br />
 	This website is built to be, not just a portfolio, but a home on the streets of the lower internet or
-	"<a class="about-link" target="_blank" href="https://zsrobinson.com/posts/the-tiny-internet/"
+	"<a class="about-link hover-link" target="_blank" href="https://zsrobinson.com/posts/the-tiny-internet/"
 		>tiny internet</a
 	>"
 	<br />
 	<br />
-	Please stick around, listen to my music, read my <a class="about-link" href="/blog">blog</a>,
+	Please stick around, listen to my music, read my <a class="about-link hover-link" href="/blog">blog</a>,
 	check out my
-	<a class="about-link" href="/projects">software projects</a> and feel free to
-	<a class="about-link" href="/contact"> reach out</a> for work, collaboration or just questions.
+	<a class="about-link hover-link" href="/projects">software projects</a> and feel free to
+	<a class="about-link hover-link" href="/contact"> reach out</a> for work, collaboration or just questions.
 </div>
 <div class="about-faq">
 	<div class="topbar">
@@ -67,7 +67,7 @@
 		and Japanese Level Up, which had a more coherent guide, but no longer exists. If you want to look
 		at it on the internet archive,
 		<a
-			class="light-link"
+			class="light-link hover-link"
 			href="https://web.archive.org/web/20160617102649/http://japaneselevelup.com/japanese-quest-walkthrough/"
 			target="_blank">click here</a
 		>. I do not recommend Duolingo.

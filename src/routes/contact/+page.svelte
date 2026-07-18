@@ -11,7 +11,7 @@
 			Email:
 		</div>
 		<div class="contact-method">
-			<a class="contact-link" href="mailto:maxhcarter@proton.me">maxhcarter@proton.me</a>
+			<a class="contact-link hover-link" href="mailto:maxhcarter@proton.me">maxhcarter@proton.me</a>
 		</div>
 	</div>
 	<div class="contact-container light">
@@ -20,7 +20,7 @@
 			LINKEDIN:
 		</div>
 		<div class="contact-method">
-			<a class="contact-link" href="https://www.linkedin.com/in/maxhc/">linkedin.com/in/maxhc/</a>
+			<a class="contact-link hover-link" href="https://www.linkedin.com/in/maxhc/">linkedin.com/in/maxhc/</a>
 		</div>
 	</div>
 	<div class="contact-container dark">
@@ -29,7 +29,7 @@
 			GITHUB:
 		</div>
 		<div class="contact-method">
-			<a class="contact-link" href="https://github.com/mathmaxyz">github.com/mathmaxyz</a>
+			<a class="contact-link hover-link" href="https://github.com/mathmaxyz">github.com/mathmaxyz</a>
 		</div>
 	</div>
 </div>

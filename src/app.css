@@ -119,6 +119,10 @@ button{
 	color: var(--dark-green);
 }
 
+.hover-link:hover {
+	color: var(--mid-mid-green);
+}
+
 .topbar {
 	box-sizing: border-box;
 	width: 100%;
