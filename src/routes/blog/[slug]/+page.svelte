@@ -9,7 +9,7 @@
 			<h2 class="article-heading">{data.title}</h2>
 			<span class="meta-text article-meta">{data.date}</span>
 		</div>
-		<a href="/blog" class="back-button"><BackIcon class="back-icon" /> Back to posts</a>
+		<a href="/blog" class="back-button"><BackIcon class="post-nav-icon" /> Back to posts</a>
 	</div>
 	<div class="prose">
 		<data.content />
@@ -57,12 +57,5 @@
 		display: flex;
 		align-items: center;
 		gap: 5px;
-	}
-
-	.back-button :global(.back-icon) {
-		width: 25px;
-		height: 25px;
-		stroke: var(--light-green);
-		margin-bottom: 2px;
 	}
 </style>
