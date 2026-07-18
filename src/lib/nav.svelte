@@ -47,32 +47,11 @@
 		if (idx >= 0) measureLink(idx);
 	}
 
-	let activated = $state(false);
-
 	function handleLinkEnter(index: number) {
-		activated = true;
 		measureLink(index);
 	}
 
-	function handleMouseMove(e: MouseEvent) {
-		if (!activated || !navButtonsEl) return;
-		const mouseX = e.clientX;
-		let closest = 0;
-		let closestDist = Infinity;
-		for (let i = 0; i < linkEls.length; i++) {
-			const rect = linkEls[i].getBoundingClientRect();
-			const center = rect.left + rect.width / 2;
-			const dist = Math.abs(mouseX - center);
-			if (dist < closestDist) {
-				closestDist = dist;
-				closest = i;
-			}
-		}
-		measureLink(closest);
-	}
-
 	function handleMouseLeave() {
-		activated = false;
 		moveToActive();
 	}
 
@@ -133,7 +112,6 @@
 		<div
 			class="nav-buttons"
 			bind:this={navButtonsEl}
-			onmousemove={handleMouseMove}
 			onmouseleave={handleMouseLeave}
 		>
 			{#each links as [href, label], i}
