@@ -19,32 +19,26 @@
 <ul class="project-list">
 	{#each data.projects as project}
 		<li class="project-entry">
-			<div class="topbar">
-				<div class="topbar-left">
-					<h2 class="topbar-heading">Project File:</h2>
-					<div class="project-topbar-title">{project.title}</div>
-				</div>
-			</div>
 			<div class="project-content">
-				<div class="project-overlay">
-					<a class="project-link" href={project.github}>
+				<a target="_blank" class="project-link" href={project.github}>
+					<div class="project-overlay">
 						<span class="project-overlay-title">{project.title}</span>
-					</a>
-					<p>
-						{project.description}
-					</p>
-					<div class="tech-stack-wrapper">
-						{#each project.stack as tech}
-							{@const Icon = getIcon(tech)}
-							<div class="tech-stack">
-								{#if Icon}
-									<Icon width="20" height="20" />
-								{/if}
-								<span class="tech-stack-text">{tech + ' '}</span>
-							</div>
-						{/each}
+						<p>
+							{project.description}
+						</p>
+						<div class="tech-stack-wrapper">
+							{#each project.stack as tech}
+								{@const Icon = getIcon(tech)}
+								<div class="tech-stack">
+									{#if Icon}
+										<Icon width="20" height="20" />
+									{/if}
+									<span class="tech-stack-text">{tech + ' '}</span>
+								</div>
+							{/each}
+						</div>
 					</div>
-				</div>
+				</a>
 				<img class="project-thumbnail" src={project.thumbnail} />
 			</div>
 		</li>
@@ -70,7 +64,6 @@
 	.project-entry {
 		position: relative;
 		border: 5px solid var(--dark-green-transparent);
-		border-top: none;
 		display: flex;
 		flex-direction: column;
 	}
@@ -102,10 +95,6 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		background: var(--mid-green);
-	}
-
-	.project-overlay:hover {
 		background: var(--light-green-transparent);
 	}
 
@@ -117,6 +106,9 @@
 		text-align: center;
 	}
 
+	.project-overlay:hover {
+		background: var(--mid-green-transparent);
+	}
 	.project-link {
 		text-decoration: none;
 	}
