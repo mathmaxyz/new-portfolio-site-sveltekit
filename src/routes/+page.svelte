@@ -1,3 +1,11 @@
+<script>
+	let faqOpen = $state(false);
+
+	function toggleFaq() {
+		faqOpen = !faqOpen;
+	}
+</script>
+
 <div class="about-wrapper">
 	<img alt="Self portrait of Max" class="about-image" src="/me_detail.png" />
 	<div class="about-grid">
@@ -10,7 +18,7 @@
 		</div>
 		<div class="row-title dark">Curriculum Vitae:</div>
 		<div class="row-fact dark">
-			<a href="/CV.pdf" class="cv-link"> View Here</a>
+			<a href="/CV.pdf" class="light-link" target="_blank"> View Here</a>
 		</div>
 		<div class="row-title light">Additional Skills:</div>
 		<div class="row-fact light">
@@ -24,7 +32,9 @@
 	<br />
 	<br />
 	This website is built to be, not just a portfolio, but a home on the streets of the lower internet or
-	"<a class="about-link" href="https://zsrobinson.com/posts/the-tiny-internet/">tiny internet</a>"
+	"<a class="about-link" target="_blank" href="https://zsrobinson.com/posts/the-tiny-internet/"
+		>tiny internet</a
+	>"
 	<br />
 	<br />
 	Please stick around, listen to my music, read my <a class="about-link" href="/blog">blog</a>,
@@ -33,28 +43,39 @@
 	<a class="about-link" href="/contact"> reach out</a> for work, collaboration or just questions.
 </div>
 <div class="about-faq">
-	<h2 class="faq-heading">FAQ</h2>
-	Q: Did you make the art and music on this website yourself?
-	<br />
-	A: Yes, the music on this site is an example of the electronic music I make in Ableton live. The art
-	is drawn by hand with a cheap, rather janky drawing tablet and GIMP (open source photoshop)
-	<br />
-	<br />
-	Q: What got you into software engineering?
-	<br />
-	A: I have a blog post about this here
-	<br />
-	<br />
-	Q: Do you have tips for learning Japanese?
-	<br />
-	A: I used the an approach inspired by popular 2010s blogs called All Japanese All the Time (AJATT) and
-	Japanese Level Up, which had a more coherent guide, but no longer exists. If you want to look at it
-	on the internet archive,
-	<a
-		class="about-link"
-		href="https://web.archive.org/web/20160617102649/http://japaneselevelup.com/japanese-quest-walkthrough/"
-		>click here</a
-	>. I do not recommend Duolingo.
+	<div class="faq-topbar">
+		<h2 class="faq-heading">FAQ</h2>
+		<button onclick={toggleFaq} class="maximise-window-button">
+			{#if !faqOpen}
+				<div class="maximise-window-icon"></div>
+			{:else}
+				<div class="minimise-window-icon"></div>
+			{/if}
+		</button>
+	</div>
+	<div class={faqOpen ? 'faq-content' : 'hide'}>
+		Q: Did you make the art and music on this website yourself?
+		<br />
+		A: Yes, the music on this site is an example of the electronic music I make in Ableton live. The art
+		is drawn by hand with a cheap, rather janky drawing tablet and GIMP (open source photoshop)
+		<br />
+		<br />
+		Q: What got you into software engineering?
+		<br />
+		A: I have a blog post about this here
+		<br />
+		<br />
+		Q: Do you have tips for learning Japanese?
+		<br />
+		A: I used the an approach inspired by popular 2010s blogs called All Japanese All the Time (AJATT)
+		and Japanese Level Up, which had a more coherent guide, but no longer exists. If you want to look
+		at it on the internet archive,
+		<a
+			class="light-link"
+			href="https://web.archive.org/web/20160617102649/http://japaneselevelup.com/japanese-quest-walkthrough/"
+			target="_blank">click here</a
+		>. I do not recommend Duolingo.
+	</div>
 </div>
 
 <style>
@@ -85,7 +106,7 @@
 		}
 	}
 
-	.cv-link {
+	.light-link {
 		color: var(--light-green);
 	}
 
@@ -124,8 +145,7 @@
 		margin-top: 20px;
 	}
 	.about-faq {
-		background: rgba(49, 68, 68, 0.8);
-		padding: 10px;
+		background: var(--mid-green-transparent);
 		color: var(--light-green);
 		font-size: 18px;
 		margin-top: 20px;
@@ -133,6 +153,39 @@
 
 	.faq-heading {
 		color: var(--light-green);
-		margin: 0 0 10px 0;
+		margin: 0;
+	}
+
+	.faq-topbar {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 5px 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.faq-content {
+		padding: 10px;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.maximise-window-button {
+		background: none;
+		border: none;
+	}
+
+	.maximise-window-icon {
+		width: 15px;
+		height: 12px;
+		border: 3px solid var(--light-green);
+		border-top: 5px solid var(--light-green);
+	}
+
+	.minimise-window-icon {
+		width: 21px;
+		border-top: 5px solid var(--light-green);
 	}
 </style>
