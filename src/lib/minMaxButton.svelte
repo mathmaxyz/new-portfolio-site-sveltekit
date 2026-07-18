@@ -1,4 +1,3 @@
-<!-- add minmax functionality here -->
 <script lang="ts">
 	interface Props {
 		toggleWindow?: () => void;
@@ -7,16 +6,16 @@
 	let { toggleWindow = () => {}, windowOpen = false }: Props = $props();
 </script>
 
-<button onclick={toggleWindow} class="maximise-window-button">
+<button onclick={toggleWindow} class="minmax-window-button">
 	{#if !windowOpen}
-		<div class="maximise-window-icon"></div>
+		<div class="maximise-window-icon minmax-icon"></div>
 	{:else}
-		<div class="minimise-window-icon"></div>
+		<div class="minimise-window-icon minmax-icon"></div>
 	{/if}
 </button>
 
 <style>
-	.maximise-window-button {
+	.minmax-window-button {
 		background: none;
 		border: none;
 	}
@@ -26,6 +25,10 @@
 		height: 12px;
 		border: 3px solid var(--light-green);
 		border-top: 5px solid var(--light-green);
+	}
+
+	.minmax-icon:hover {
+		border-color: var(--mid-green);
 	}
 
 	.minimise-window-icon {

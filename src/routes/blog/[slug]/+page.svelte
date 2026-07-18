@@ -58,4 +58,8 @@
 		align-items: center;
 		gap: 5px;
 	}
+
+	.back-button:hover {
+		background: var(--mid-mid-green);
+	}
 </style>

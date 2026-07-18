@@ -133,6 +133,10 @@ button{
 	color: var(--light-green);
 }
 
+.topbar-linked:hover{
+	background: var(--mid-green-transparent);
+}
+
 .topbar-heading {
 	font-family: var(--font-display);
 	font-size: 25px;
@@ -187,9 +191,14 @@ button{
 	gap: 5px;
 }
 
+.post-link:hover{
+	background: var(--mid-mid-green);
+}
+
 .post-topbar-link {
 	text-decoration: none;
 }
+
 
 .post-teaser-content{
 	border: 5px solid var(--dark-green-transparent);
@@ -197,6 +206,10 @@ button{
 	width: 100%;
 	min-width: 0;
 	box-sizing: border-box;
+}
+
+.post-list li:has(.topbar-linked:hover) .post-teaser-content {
+	border-color: var(--mid-green-transparent);
 }
 
 .post-thumbnail {
