@@ -2,6 +2,7 @@
 title: Hello World
 description: My first blog post.
 date: '2026-06-13'
+thumbnail: /portraits2.png
 ---
 
 This is my first blog post. Welcome to my site!

@@ -18,7 +18,8 @@ export async function load() {
 				title: mod.metadata.title,
 				description: mod.metadata.description,
 				date: mod.metadata.date,
-				excerpt: String(result).trim()
+				excerpt: String(result).trim(),
+				thumbnail: mod.metadata.thumbnail
 			};
 		})
 	);

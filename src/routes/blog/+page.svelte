@@ -9,7 +9,10 @@
 				<span class="post-title">{post.title}</span>
 				<span class="meta-text">{post.date}</span>
 			</a>
-			<p class="post-excerpt">{post.excerpt} ...</p>
+			<div class="post-teaser-content">
+				<img class="post-thumbnail" src={post.thumbnail} />
+				<p class="post-excerpt">{post.excerpt} ...</p>
+			</div>
 		</li>
 	{/each}
 </ul>
