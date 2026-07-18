@@ -1,4 +1,5 @@
 <script>
+	import BackIcon from '$lib/icons/controls/back.svg?component';
 	let { data } = $props();
 </script>
 
@@ -8,6 +9,7 @@
 			<h2 class="article-heading">{data.title}</h2>
 			<span class="meta-text article-meta">{data.date}</span>
 		</div>
+		<a href="/blog" class="back-button"><BackIcon class="back-icon" /> Back to posts</a>
 	</div>
 	<div class="prose">
 		<data.content />
@@ -41,5 +43,26 @@
 		background-color: var(--light-green-transparent);
 		border: 5px solid var(--dark-green-transparent);
 		color: var(--light-green);
+	}
+
+	.back-button {
+		text-decoration: none;
+		color: var(--light-green);
+		background: var(--dark-green-transparent);
+		height: fit-content;
+		padding: 5px 10px 5px 5px;
+		margin-top: 10px;
+		font-family: var(--font-display);
+		font-size: 20px;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+	.back-button :global(.back-icon) {
+		width: 25px;
+		height: 25px;
+		stroke: var(--light-green);
+		margin-bottom: 2px;
 	}
 </style>

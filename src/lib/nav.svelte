@@ -136,6 +136,7 @@
 		background: var(--light-green-transparent);
 		padding-top: 10px;
 		border: 5px solid var(--dark-green-transparent);
+		border-top: none;
 	}
 
 	.menu .section-heading {
