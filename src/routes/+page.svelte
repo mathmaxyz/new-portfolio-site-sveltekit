@@ -18,14 +18,14 @@
 			Java, Spring, Python, FastApi, Typescript, NodeJS, React, Angular, Docker, AWS, SQL,
 			Tensorflow, Kubernetes, Kafka, Azure, Claude Code
 		</div>
-		<div class="row-title dark">Curriculum Vitae:</div>
+		<div class="row-title dark">Additional Skills:</div>
 		<div class="row-fact dark">
-			<a href="/CV.pdf" class="light-link hover-link" target="_blank"> View Here</a>
-		</div>
-		<div class="row-title light">Additional Skills:</div>
-		<div class="row-fact light">
 			Electronic music production, Japanese, event production, illustration, graphic design, Djing,
 			boxing
+		</div>
+		<div class="row-title light">Curriculum Vitae:</div>
+		<div class="row-fact light">
+			<a href="/CV.pdf" class="light-link hover-link" target="_blank"> View Here</a>
 		</div>
 	</div>
 </div>
@@ -115,7 +115,7 @@
 
 	.row-fact {
 		font-size: 18px;
-		padding: 3px 10px 3px 0;
+		padding: 7px 10px 3px 0;
 		text-align: right;
 		color: var(--light-green);
 	}
