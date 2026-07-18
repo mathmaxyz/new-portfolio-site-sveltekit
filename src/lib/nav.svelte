@@ -106,6 +106,7 @@
 
 	.section-heading-link.active {
 		text-decoration: underline;
+		text-decoration-thickness: 3px;
 		text-underline-offset: 4px;
 		text-decoration-color: var(--mid-green);
 	}
