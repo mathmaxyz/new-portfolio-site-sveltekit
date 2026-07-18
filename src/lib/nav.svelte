@@ -10,11 +10,70 @@
 
 	const mobile = new MediaQuery('max-width: 768px');
 
+	const links: [string, string][] = [
+		['/', 'About'],
+		['/blog', 'writing'],
+		['/projects', 'projects'],
+		['/contact', 'contact']
+	];
+
+	let navButtonsEl: HTMLDivElement | undefined = $state();
+	let linkEls: HTMLAnchorElement[] = $state([]);
+	let underlineLeft = $state(0);
+	let underlineWidth = $state(0);
+	let ready = $state(false);
+
 	function isActive(href: string) {
 		const path = page.url.pathname;
 		if (href === '/') return path === '/';
 		return path.startsWith(href);
 	}
+
+	function getActiveIndex() {
+		return links.findIndex(([href]) => isActive(href));
+	}
+
+	function measureLink(index: number) {
+		const el = linkEls[index];
+		if (!el || !navButtonsEl) return;
+		const parentRect = navButtonsEl.getBoundingClientRect();
+		const elRect = el.getBoundingClientRect();
+		underlineLeft = elRect.left - parentRect.left;
+		underlineWidth = elRect.width;
+	}
+
+	function moveToActive() {
+		const idx = getActiveIndex();
+		if (idx >= 0) measureLink(idx);
+	}
+
+	function handleMouseMove(e: MouseEvent) {
+		if (!navButtonsEl) return;
+		const mouseX = e.clientX;
+		let closest = 0;
+		let closestDist = Infinity;
+		for (let i = 0; i < linkEls.length; i++) {
+			const rect = linkEls[i].getBoundingClientRect();
+			const center = rect.left + rect.width / 2;
+			const dist = Math.abs(mouseX - center);
+			if (dist < closestDist) {
+				closestDist = dist;
+				closest = i;
+			}
+		}
+		measureLink(closest);
+	}
+
+	function handleMouseLeave() {
+		moveToActive();
+	}
+
+	$effect(() => {
+		if (navButtonsEl && linkEls.length === links.length) {
+			moveToActive();
+			ready = true;
+		}
+	});
 
 	function toggleMenu() {
 		showMenu = !showMenu;
@@ -55,7 +114,7 @@
 		</div>
 		{#if showMenu}
 			<div class="menu">
-				{#each [['/', 'About'], ['/blog', 'writing'], ['/projects', 'projects'], ['/contact', 'contact']] as [href, label]}
+				{#each links as [href, label]}
 					<a class="section-heading-link" class:active={isActive(href)} {href} onclick={toggleMenu}>
 						<span class="section-heading">{label}</span>
 					</a>
@@ -63,12 +122,22 @@
 			</div>
 		{/if}
 	{:else}
-		<div class="nav-buttons">
-			{#each [['/', 'About'], ['/blog', 'writing'], ['/projects', 'projects'], ['/contact', 'contact']] as [href, label]}
-				<a class="section-heading-link" class:active={isActive(href)} {href}>
+		<div
+			class="nav-buttons"
+			bind:this={navButtonsEl}
+			onmousemove={handleMouseMove}
+			onmouseleave={handleMouseLeave}
+		>
+			{#each links as [href, label], i}
+				<a class="section-heading-link" class:active={isActive(href)} {href} bind:this={linkEls[i]}>
 					<span class="section-heading">{label}</span>
 				</a>
 			{/each}
+			<div
+				class="nav-underline"
+				class:nav-underline-ready={ready}
+				style="left: {underlineLeft}px; width: {underlineWidth}px;"
+			></div>
 		</div>
 	{/if}
 </div>
@@ -103,13 +172,23 @@
 		margin-top: 15px;
 		display: flex;
 		justify-content: space-between;
+		position: relative;
 	}
 
-	.section-heading-link.active {
-		text-decoration: underline;
-		text-decoration-thickness: 3px;
-		text-underline-offset: 4px;
-		text-decoration-color: var(--mid-green);
+	.nav-underline {
+		position: absolute;
+		bottom: -4px;
+		height: 3px;
+		background: var(--mid-green);
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.nav-underline-ready {
+		opacity: 1;
+		transition:
+			left 0.8s ease,
+			width 0.3s ease;
 	}
 
 	.menu-button {
@@ -149,6 +228,9 @@
 	}
 
 	.menu .section-heading-link.active {
+		text-decoration: underline;
+		text-decoration-thickness: 3px;
+		text-underline-offset: 4px;
 		text-decoration-color: var(--light-green);
 	}
 </style>
