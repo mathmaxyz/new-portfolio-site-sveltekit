@@ -94,9 +94,15 @@
 	.project-thumbnail {
 		width: 100%;
 		display: block;
-		flex-direction: column;
 		height: 100%;
 		object-fit: cover;
+		scale: 1.15;
+		animation: scroll-diagonal 30s linear infinite alternate;
+	}
+
+	@keyframes scroll-diagonal {
+		0% { translate: -5% -5%; }
+		100% { translate: 5% 5%; }
 	}
 
 	.project-overlay {
@@ -105,6 +111,7 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
+		z-index: 1;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
