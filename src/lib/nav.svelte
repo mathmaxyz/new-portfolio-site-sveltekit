@@ -118,7 +118,7 @@
 	}
 
 	.section-heading-button {
-		background: var(--dark-green);
+		background: var(--dark-green-transparent);
 		border: none;
 		margin: 1fr 0 0 0;
 		display: flex;
@@ -133,8 +133,9 @@
 	.menu {
 		display: flex;
 		flex-direction: column;
-		background: var(--dark-green-transparent);
-		padding-bottom: 20px;
+		background: var(--light-green-transparent);
+		padding-top: 10px;
+		border: 5px solid var(--dark-green-transparent);
 	}
 
 	.menu .section-heading {
@@ -142,7 +143,7 @@
 	}
 
 	.menu .section-heading-link {
-		margin-left: 20px;
+		margin: 0 0 10px 10px;
 	}
 
 	.menu .section-heading-link.active {
