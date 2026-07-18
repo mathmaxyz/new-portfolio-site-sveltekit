@@ -109,11 +109,7 @@
 			</div>
 		{/if}
 	{:else}
-		<div
-			class="nav-buttons"
-			bind:this={navButtonsEl}
-			onmouseleave={handleMouseLeave}
-		>
+		<div class="nav-buttons" bind:this={navButtonsEl} onmouseleave={handleMouseLeave}>
 			{#each links as [href, label], i}
 				<a
 					class="section-heading-link"
@@ -179,7 +175,7 @@
 	.nav-underline-ready {
 		opacity: 1;
 		transition:
-			left 0.8s ease,
+			left 0.6s ease,
 			width 0.3s ease;
 	}
 
