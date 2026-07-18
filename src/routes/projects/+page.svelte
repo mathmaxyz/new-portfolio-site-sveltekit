@@ -57,7 +57,7 @@
 	}
 
 	.projects-topbar {
-		background: var(--mid-green-transparent);
+		background: var(--dark-green-transparent);
 	}
 
 	.project-list {
@@ -109,7 +109,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		background: var(--light-green-transparent);
+		background: var(--mid-green-transparent);
 	}
 
 	.project-overlay p {
@@ -121,7 +121,7 @@
 	}
 
 	.project-overlay:hover {
-		background: var(--mid-green-transparent);
+		background: var(--mid-dark-green-transparent);
 	}
 	.project-link {
 		text-decoration: none;
