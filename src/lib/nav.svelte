@@ -133,7 +133,7 @@
 	.menu {
 		display: flex;
 		flex-direction: column;
-		background: var(--dark-green);
+		background: var(--dark-green-transparent);
 		padding-bottom: 20px;
 	}
 

@@ -85,7 +85,7 @@
 		width: 30%;
 		object-fit: cover;
 		padding: 5px;
-		border: 5px solid var(--mid-green-transparent);
+		border: 5px solid var(--dark-green-transparent);
 		margin: 0;
 	}
 
@@ -99,6 +99,9 @@
 		.about-image {
 			width: 100%;
 			box-sizing: border-box;
+		}
+		.about-grid {
+			border-left: 5px solid var(--dark-green-transparent);
 		}
 	}
 
@@ -114,8 +117,9 @@
 		display: grid;
 		width: 100%;
 		grid-template-columns: 1fr 1fr;
-		border-bottom: 5px solid var(--mid-green-transparent);
-		border-right: 5px solid var(--mid-green-transparent);
+		border-bottom: 5px solid var(--dark-green-transparent);
+		border-right: 5px solid var(--dark-green-transparent);
+		box-sizing: border-box;
 	}
 
 	.row-title {
@@ -134,20 +138,22 @@
 	}
 
 	.about-blurb {
-		border: 5px solid var(--mid-green-transparent);
+		border: 5px solid var(--dark-green-transparent);
 		color: var(--mid-green);
 		padding: 10px;
 		font-size: 18px;
 		margin-top: 20px;
 	}
 	.about-faq {
-		background: var(--mid-green-transparent);
 		color: var(--light-green);
 		font-size: 18px;
 		margin-top: 20px;
 	}
 
 	.faq-content {
+		background: var(--light-green-transparent);
+		border: 5px solid var(--dark-green-transparent);
+		border-top: none;
 		padding: 10px;
 	}
 

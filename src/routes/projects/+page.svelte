@@ -69,14 +69,14 @@
 
 	.project-entry {
 		position: relative;
-		border: 5px solid var(--mid-green-transparent);
+		border: 5px solid var(--dark-green-transparent);
 		border-top: none;
 		display: flex;
 		flex-direction: column;
 	}
 
 	.project-topbar {
-		background: var(--mid-green-transparent);
+		background: var(--dark-green-transparent);
 	}
 	.project-content {
 		flex-grow: 1;
