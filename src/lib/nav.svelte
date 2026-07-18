@@ -47,8 +47,15 @@
 		if (idx >= 0) measureLink(idx);
 	}
 
+	let activated = $state(false);
+
+	function handleLinkEnter(index: number) {
+		activated = true;
+		measureLink(index);
+	}
+
 	function handleMouseMove(e: MouseEvent) {
-		if (!navButtonsEl) return;
+		if (!activated || !navButtonsEl) return;
 		const mouseX = e.clientX;
 		let closest = 0;
 		let closestDist = Infinity;
@@ -65,6 +72,7 @@
 	}
 
 	function handleMouseLeave() {
+		activated = false;
 		moveToActive();
 	}
 
@@ -129,7 +137,13 @@
 			onmouseleave={handleMouseLeave}
 		>
 			{#each links as [href, label], i}
-				<a class="section-heading-link" class:active={isActive(href)} {href} bind:this={linkEls[i]}>
+				<a
+					class="section-heading-link"
+					class:active={isActive(href)}
+					{href}
+					bind:this={linkEls[i]}
+					onmouseenter={() => handleLinkEnter(i)}
+				>
 					<span class="section-heading">{label}</span>
 				</a>
 			{/each}
