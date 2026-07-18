@@ -110,7 +110,7 @@
 	}
 
 	.about-link {
-		color: var(--mid-green);
+		color: var(--light-green);
 	}
 
 	.about-grid {
@@ -139,7 +139,8 @@
 
 	.about-blurb {
 		border: 5px solid var(--dark-green-transparent);
-		color: var(--mid-green);
+		background: var(--light-green-transparent);
+		color: var(--light-green);
 		padding: 10px;
 		font-size: 18px;
 		margin-top: 20px;
