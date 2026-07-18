@@ -16,36 +16,50 @@
 	}
 </script>
 
-<ul class="project-list">
-	{#each data.projects as project}
-		<li class="project-entry">
-			<div class="project-content">
-				<a target="_blank" class="project-link" href={project.github}>
-					<div class="project-overlay">
-						<span class="project-overlay-title">{project.title}</span>
-						<p>
-							{project.description}
-						</p>
-						<div class="tech-stack-wrapper">
-							{#each project.stack as tech}
-								{@const Icon = getIcon(tech)}
-								<div class="tech-stack">
-									{#if Icon}
-										<Icon width="20" height="20" />
-									{/if}
-									<span class="tech-stack-text">{tech + ' '}</span>
-								</div>
-							{/each}
+<div class="project-container">
+	<div class="topbar projects-topbar">
+		<h2 class="topbar-heading projects-heading">Choose a project to explore...</h2>
+	</div>
+
+	<ul class="project-list">
+		{#each data.projects as project}
+			<li class="project-entry">
+				<div class="project-content">
+					<a target="_blank" class="project-link" href={project.github}>
+						<div class="project-overlay">
+							<span class="project-overlay-title">{project.title}</span>
+							<p>
+								{project.description}
+							</p>
+							<div class="tech-stack-wrapper">
+								{#each project.stack as tech}
+									{@const Icon = getIcon(tech)}
+									<div class="tech-stack">
+										{#if Icon}
+											<Icon width="20" height="20" />
+										{/if}
+										<span class="tech-stack-text">{tech + ' '}</span>
+									</div>
+								{/each}
+							</div>
 						</div>
-					</div>
-				</a>
-				<img class="project-thumbnail" src={project.thumbnail} />
-			</div>
-		</li>
-	{/each}
-</ul>
+					</a>
+					<img class="project-thumbnail" src={project.thumbnail} />
+				</div>
+			</li>
+		{/each}
+	</ul>
+</div>
 
 <style>
+	.project-container {
+		margin-top: 10px;
+	}
+
+	.projects-topbar {
+		background: var(--mid-green-transparent);
+	}
+
 	.project-list {
 		list-style: none;
 		padding: 0;

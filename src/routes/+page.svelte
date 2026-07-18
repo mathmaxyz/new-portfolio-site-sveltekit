@@ -105,6 +105,21 @@
 		}
 	}
 
+	.row-title {
+		font-family: var(--font-display);
+		font-size: 25px;
+		font-weight: 300;
+		color: var(--light-green);
+		padding: 3px 5px;
+	}
+
+	.row-fact {
+		font-size: 18px;
+		padding: 3px 10px 3px 0;
+		text-align: right;
+		color: var(--light-green);
+	}
+
 	.light-link {
 		color: var(--light-green);
 	}
@@ -120,21 +135,6 @@
 		border-bottom: 5px solid var(--dark-green-transparent);
 		border-right: 5px solid var(--dark-green-transparent);
 		box-sizing: border-box;
-	}
-
-	.row-title {
-		font-family: var(--font-display);
-		font-size: 25px;
-		font-weight: 300;
-		color: var(--light-green);
-		padding: 3px 5px;
-	}
-
-	.row-fact {
-		font-size: 18px;
-		padding: 3px 10px 3px 0;
-		text-align: right;
-		color: var(--light-green);
 	}
 
 	.about-blurb {
