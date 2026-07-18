@@ -68,6 +68,7 @@ button{
 
 .footer-copyright {
 	color: var(--mid-green);
+	padding: 5px;
 }
 
 /* Typography */
@@ -110,7 +111,6 @@ button{
 	white-space: nowrap;
 	display: flex;
 	align-items: center;
-	padding: 0 10px;
 }
 
 .embed-link {
@@ -132,6 +132,13 @@ button{
 	font-weight: 400;
 	color: var(--light-green);
 	margin: 0;
+}
+
+
+.topbar-left {
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 
 
@@ -162,19 +169,7 @@ button{
 .post-link {
 	text-decoration: none;
 	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
-	align-items: stretch;
-	background: var(--dark-green-transparent);
-	padding: 5px;
-}
-
-.post-title {
-	font-family: var(--font-display);
-	font-size: 1.5rem;
-	color: var(--light-green);
-	flex-grow: 1;
-	padding: 0 0 0 10px;
+	align-items: center;
 }
 
 .post-teaser-content{
