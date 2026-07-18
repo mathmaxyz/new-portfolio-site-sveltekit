@@ -1,19 +1,19 @@
 <div class="about-wrapper">
 	<img alt="Self portrait of Max" class="about-image" src="/me_detail.png" />
 	<div class="about-grid">
-		<div class="row-title light">Name:</div>
-		<div class="row-fact light">Max</div>
-		<div class="row-title dark">Tech stack:</div>
-		<div class="row-fact dark">
+		<div class="row-title dark">Name:</div>
+		<div class="row-fact dark">Max</div>
+		<div class="row-title light">Tech stack:</div>
+		<div class="row-fact light">
 			Java, Spring, Python, FastApi, Typescript, NodeJS, React, Angular, Docker, AWS, SQL,
 			Tensorflow, Kubernetes, Kafka, Azure, Claude Code
 		</div>
-		<div class="row-title light">Curriculum Vitae:</div>
-		<div class="row-fact light">
-			<a href="/CV.pdf" class="about-link"> View Here</a>
-		</div>
-		<div class="row-title dark">Additional Skills:</div>
+		<div class="row-title dark">Curriculum Vitae:</div>
 		<div class="row-fact dark">
+			<a href="/CV.pdf" class="cv-link"> View Here</a>
+		</div>
+		<div class="row-title light">Additional Skills:</div>
+		<div class="row-fact light">
 			Electronic music production, Japanese, event production, illustration, graphic design, Djing,
 			boxing
 		</div>
@@ -68,7 +68,7 @@
 		width: 30%;
 		object-fit: cover;
 		padding: 5px;
-		border: 10px solid rgba(88, 121, 121, 0.8);
+		border: 5px solid var(--mid-green-transparent);
 		margin: 0;
 	}
 
@@ -85,14 +85,20 @@
 		}
 	}
 
-	.about-link {
+	.cv-link {
 		color: var(--light-green);
+	}
+
+	.about-link {
+		color: var(--mid-green);
 	}
 
 	.about-grid {
 		display: grid;
 		width: 100%;
 		grid-template-columns: 1fr 1fr;
+		border-bottom: 5px solid var(--mid-green-transparent);
+		border-right: 5px solid var(--mid-green-transparent);
 	}
 
 	.row-title {
@@ -111,8 +117,8 @@
 	}
 
 	.about-blurb {
-		background: rgba(88, 121, 121, 0.8);
-		color: var(--light-green);
+		border: 5px solid var(--mid-green-transparent);
+		color: var(--mid-green);
 		padding: 10px;
 		font-size: 18px;
 		margin-top: 20px;
