@@ -1,7 +1,9 @@
 <script lang="ts">
+	import MinMaxButton from '$lib/minMaxButton.svelte';
 	import type { Component } from 'svelte';
 
 	let { data } = $props();
+	let project;
 
 	const techIcons: Record<string, { default: Component }> = import.meta.glob(
 		'$lib/icons/tech_stack/*.svg',
@@ -17,26 +19,34 @@
 <ul class="project-list">
 	{#each data.projects as project}
 		<li class="project-entry">
-			<div class="project-overlay">
-				<a class="project-link" href={project.github}>
-					<span class="project-overlay-title">{project.title}</span>
-				</a>
-				<p>
-					{project.description}
-				</p>
-				<div class="tech-stack-wrapper">
-					{#each project.stack as tech}
-						{@const Icon = getIcon(tech)}
-						<div class="tech-stack">
-							{#if Icon}
-								<Icon width="20" height="20" />
-							{/if}
-							<span class="tech-stack-text">{tech + ' '}</span>
-						</div>
-					{/each}
+			<div class="topbar">
+				<div class="topbar-left">
+					<h2 class="topbar-heading">Project File:</h2>
+					<div class="project-topbar-title">{project.title}</div>
 				</div>
 			</div>
-			<img class="project-thumbnail" src={project.thumbnail} />
+			<div class="project-content">
+				<div class="project-overlay">
+					<a class="project-link" href={project.github}>
+						<span class="project-overlay-title">{project.title}</span>
+					</a>
+					<p>
+						{project.description}
+					</p>
+					<div class="tech-stack-wrapper">
+						{#each project.stack as tech}
+							{@const Icon = getIcon(tech)}
+							<div class="tech-stack">
+								{#if Icon}
+									<Icon width="20" height="20" />
+								{/if}
+								<span class="tech-stack-text">{tech + ' '}</span>
+							</div>
+						{/each}
+					</div>
+				</div>
+				<img class="project-thumbnail" src={project.thumbnail} />
+			</div>
 		</li>
 	{/each}
 </ul>
@@ -59,11 +69,25 @@
 
 	.project-entry {
 		position: relative;
+		border: 5px solid var(--mid-green-transparent);
+		border-top: none;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.project-topbar {
+		background: var(--mid-green-transparent);
+	}
+	.project-content {
+		flex-grow: 1;
+		position: relative;
+		overflow: hidden;
 	}
 
 	.project-thumbnail {
 		width: 100%;
 		display: block;
+		flex-direction: column;
 		height: 100%;
 		object-fit: cover;
 	}
@@ -82,7 +106,7 @@
 	}
 
 	.project-overlay:hover {
-		background: var(--mid-green-transparent);
+		background: var(--light-green-transparent);
 	}
 
 	.project-overlay p {
@@ -115,5 +139,18 @@
 
 	.tech-stack-wrapper {
 		display: flex;
+	}
+
+	.project-topbar-title {
+		color: var(--light-green);
+		font-size: 18px;
+		display: flex;
+		align-items: center;
+	}
+
+	.topbar-left {
+		display: flex;
+		align-items: center;
+		gap: 10px;
 	}
 </style>

@@ -1,4 +1,6 @@
 <script>
+	import MinMaxButton from '$lib/minMaxButton.svelte';
+
 	let faqOpen = $state(false);
 
 	function toggleFaq() {
@@ -43,15 +45,9 @@
 	<a class="about-link" href="/contact"> reach out</a> for work, collaboration or just questions.
 </div>
 <div class="about-faq">
-	<div class="faq-topbar">
-		<h2 class="faq-heading">FAQ</h2>
-		<button onclick={toggleFaq} class="maximise-window-button">
-			{#if !faqOpen}
-				<div class="maximise-window-icon"></div>
-			{:else}
-				<div class="minimise-window-icon"></div>
-			{/if}
-		</button>
+	<div class="topbar">
+		<h2 class="topbar-heading">FAQ</h2>
+		<MinMaxButton toggleWindow={toggleFaq} windowOpen={faqOpen} />
 	</div>
 	<div class={faqOpen ? 'faq-content' : 'hide'}>
 		Q: Did you make the art and music on this website yourself?
@@ -151,41 +147,11 @@
 		margin-top: 20px;
 	}
 
-	.faq-heading {
-		color: var(--light-green);
-		margin: 0;
-	}
-
-	.faq-topbar {
-		box-sizing: border-box;
-		width: 100%;
-		padding: 5px 10px;
-		display: flex;
-		justify-content: space-between;
-	}
-
 	.faq-content {
 		padding: 10px;
 	}
 
 	.hide {
 		display: none;
-	}
-
-	.maximise-window-button {
-		background: none;
-		border: none;
-	}
-
-	.maximise-window-icon {
-		width: 15px;
-		height: 12px;
-		border: 3px solid var(--light-green);
-		border-top: 5px solid var(--light-green);
-	}
-
-	.minimise-window-icon {
-		width: 21px;
-		border-top: 5px solid var(--light-green);
 	}
 </style>
