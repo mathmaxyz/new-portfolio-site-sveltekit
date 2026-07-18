@@ -55,7 +55,7 @@
 		</div>
 		{#if showMenu}
 			<div class="menu">
-				{#each [['/', 'About'], ['/blog', 'writing'], ['/projects', 'projects'], ['/contact', 'contact'], ['/minigame']] as [href, label]}
+				{#each [['/', 'About'], ['/blog', 'writing'], ['/projects', 'projects'], ['/contact', 'contact']] as [href, label]}
 					<a class="section-heading-link" class:active={isActive(href)} {href} onclick={toggleMenu}>
 						<span class="section-heading">{label}</span>
 					</a>
@@ -64,7 +64,7 @@
 		{/if}
 	{:else}
 		<div class="nav-buttons">
-			{#each [['/', 'About'], ['/blog', 'writing'], ['/projects', 'projects'], ['/contact', 'contact'], ['/minigame']] as [href, label]}
+			{#each [['/', 'About'], ['/blog', 'writing'], ['/projects', 'projects'], ['/contact', 'contact']] as [href, label]}
 				<a class="section-heading-link" class:active={isActive(href)} {href}>
 					<span class="section-heading">{label}</span>
 				</a>
@@ -99,6 +99,7 @@
 		height: clamp(1.35rem, 5.3vw, 50px);
 	}
 	.nav-buttons {
+		width: 100%;
 		margin-top: 15px;
 		display: flex;
 		justify-content: space-between;
