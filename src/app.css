@@ -182,7 +182,6 @@ button{
 
 .post-thumbnail {
 	width: 15%;
-	padding: 5px;
 	border-right: 5px solid var(--dark-green-transparent);
 	object-fit: cover;
 }
@@ -248,11 +247,4 @@ button{
 	53% { transform: translateX(0); }
 	78% { transform: translateX(3px); }
 	79% { transform: translateX(0); }
-}
-
-/* Prose (blog post body) */
-
-.prose {
-	margin-top: 1.5rem;
-	line-height: 1.6;
 }

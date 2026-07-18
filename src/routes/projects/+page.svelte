@@ -147,10 +147,4 @@
 		display: flex;
 		align-items: center;
 	}
-
-	.topbar-left {
-		display: flex;
-		align-items: center;
-		gap: 10px;
-	}
 </style>

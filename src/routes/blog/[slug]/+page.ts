@@ -14,6 +14,7 @@ export async function load({ params }) {
 		content: mod.default,
 		title: mod.metadata.title,
 		description: mod.metadata.description,
-		date: mod.metadata.date
+		date: mod.metadata.date,
+		thumbnail: mod.metadata.thumbnail
 	};
 }
