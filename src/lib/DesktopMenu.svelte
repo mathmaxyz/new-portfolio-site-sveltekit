@@ -44,7 +44,9 @@
 	$effect(() => {
 		if (navButtonsEl && linkEls.length === links.length) {
 			moveToActive();
-			ready = true;
+			requestAnimationFrame(() => {
+				ready = true;
+			});
 		}
 	});
 </script>
