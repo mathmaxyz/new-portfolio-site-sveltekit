@@ -29,7 +29,7 @@ button{
 	cursor: pointer;
 }
 
-:visited {
+:visited, :link {
 	color: inherit;
 }
 
