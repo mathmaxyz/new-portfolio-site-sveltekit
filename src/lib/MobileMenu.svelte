@@ -71,6 +71,10 @@
 		color: var(--light-green);
 	}
 
+	.menu .section-heading-link:hover .section-heading {
+		color: var(--mid-mid-green);
+	}
+
 	.menu .section-heading-link {
 		margin: 0 0 10px 10px;
 	}
@@ -80,10 +84,6 @@
 		text-decoration-thickness: 3px;
 		text-underline-offset: 4px;
 		text-decoration-color: var(--light-green);
-	}
-
-	.menu .section-heading-link:hover .section-heading {
-		color: var(--mid-mid-green);
 	}
 
 	.menu .section-heading-link:hover {

@@ -99,6 +99,11 @@ button{
 	display: block;
 }
 
+
+.section-heading-link:hover .section-heading {
+	color: var(--mid-mid-green);
+}
+
 .tagline {
 	font-optical-sizing: auto;
 	font-weight: 400;

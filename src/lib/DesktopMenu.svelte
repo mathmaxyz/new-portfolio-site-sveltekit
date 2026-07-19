@@ -92,4 +92,8 @@
 			left 0.6s ease,
 			width 0.3s ease;
 	}
+
+	.nav-buttons .section-heading-link:hover .section-heading {
+		color: var(--mid-mid-green);
+	}
 </style>
