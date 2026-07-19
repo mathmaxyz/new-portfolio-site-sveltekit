@@ -49,5 +49,10 @@
 	.audio-btn :global(svg) {
 		width: clamp(1.35rem, 5.3vw, 50px);
 		height: clamp(1.35rem, 5.3vw, 50px);
+		fill: var(--dark-green);
+	}
+
+	.audio-btn:hover :global(svg) {
+		fill: var(--mid-mid-green);
 	}
 </style>
