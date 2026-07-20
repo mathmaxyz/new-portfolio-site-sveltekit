@@ -44,9 +44,7 @@
 	$effect(() => {
 		if (navButtonsEl && linkEls.length === links.length) {
 			moveToActive();
-			requestAnimationFrame(() => {
-				ready = true;
-			});
+			ready = true;
 		}
 	});
 </script>
@@ -93,9 +91,5 @@
 		transition:
 			left 0.6s ease,
 			width 0.3s ease;
-	}
-
-	.nav-buttons .section-heading-link:hover .section-heading {
-		color: var(--mid-mid-green);
 	}
 </style>
