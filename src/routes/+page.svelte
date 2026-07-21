@@ -58,7 +58,7 @@
 		<br />
 		Q: What got you into software engineering?
 		<br />
-		A: I have a blog post about this here
+		A: I have a blog post about this <a class="hover-link" href="/blog/2026-07-21-how_i_got_into_programming">here</a>
 		<br />
 		<br />
 		Q: Do you have tips for learning Japanese?
