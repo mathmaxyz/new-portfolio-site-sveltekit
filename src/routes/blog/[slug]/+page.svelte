@@ -62,4 +62,12 @@
 	.back-button:hover {
 		background: var(--mid-mid-green);
 	}
+
+	.prose :global(.figure) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		font-style: italic;
+	}
 </style>
