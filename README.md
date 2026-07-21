@@ -1,42 +1,16 @@
-# sv
+# maxhopecarter.com
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Personal portfolio site for Max Hope-Carter — blog, projects, and contact info.
 
-## Creating a project
+Built with SvelteKit, TypeScript, and mdsvex. Deployed to Cloudflare Workers.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
+## Development
 
 ```sh
-# recreate this project
-npx sv@0.16.1 create --template minimal --types ts --add prettier eslint mdsvex --install npm sk-new-portfolio-site
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## Deployment
 
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Pushes to `main` deploy automatically via GitHub Actions.
