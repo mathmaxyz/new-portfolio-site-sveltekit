@@ -74,6 +74,12 @@
 	}
 
 	.prose :global(img) {
-		width: 100%;
+		max-width: 80%;
+	}
+
+	@media (max-width: 769px) {
+		.prose :global(img) {
+			width: 100%;
+		}
 	}
 </style>
