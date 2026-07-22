@@ -46,6 +46,7 @@
 		background-color: var(--light-green-transparent);
 		border: 5px solid var(--dark-green-transparent);
 		color: var(--light-green);
+		overflow-wrap: break-word;
 	}
 
 	.back-button {
