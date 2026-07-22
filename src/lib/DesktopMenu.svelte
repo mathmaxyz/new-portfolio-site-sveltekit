@@ -45,6 +45,10 @@
 		if (navButtonsEl && linkEls.length === links.length) {
 			moveToActive();
 			ready = true;
+
+			const ro = new ResizeObserver(() => moveToActive());
+			ro.observe(navButtonsEl);
+			return () => ro.disconnect();
 		}
 	});
 </script>
