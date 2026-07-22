@@ -16,6 +16,9 @@
 	<div class="prose">
 		<data.content />
 	</div>
+	<div class="top-button-container">
+		<a href="#" class="top-button"><BackIcon class="post-nav-icon top-icon" /> Back to top</a>
+	</div>
 </article>
 
 <style>
@@ -64,6 +67,33 @@
 	}
 
 	.back-button:hover {
+		background: var(--mid-mid-green);
+	}
+
+	:global(.top-icon) {
+		transform: rotate(90deg);
+	}
+
+	.top-button-container {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 10px;
+	}
+
+	.top-button {
+		text-decoration: none;
+		color: var(--light-green);
+		background: var(--dark-green-transparent);
+		height: fit-content;
+		padding: 5px 10px 5px 5px;
+		font-family: var(--font-display);
+		font-size: 20px;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+	.top-button:hover {
 		background: var(--mid-mid-green);
 	}
 
