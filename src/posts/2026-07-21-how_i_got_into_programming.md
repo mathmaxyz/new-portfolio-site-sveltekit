@@ -24,7 +24,7 @@ To me, computers are the ultimate canvas. In the analogue world perhaps you can 
 Cue me, strapped to the computer for days trying to make some version of Crypt Raider in Game Maker 7 at the age of eight. My allocated computer time would eventually get limited, but that only meant I spent the rest of my time very seriously brainstorming with my older cousin about how we were going to work up to creating a two person studio that ran an MMO to rival WoW.
 
 <figure class="figure">
-  <img src="/yoygames.jpg" alt="Screenshot of yoyogames.com 2007" width="80%" />
+  <img src="/yoygames.jpg" alt="Screenshot of yoyogames.com 2007"  />
   <figcaption>Figure 1: yoygames.com GameMaker 7 download page circa; 2007 capture (web.archive.org/web)</figcaption>
 </figure>
 
@@ -41,7 +41,7 @@ At this point I'm afraid I'm losing credibility with some readers. I'm talking a
 Luckily, I can point to accomplished computer scientists from an age where personal computing was barely starting to be conceived of, and being a top level scientist was almost a requirement for being a programmer. Donald Knuth, Stanford professor emeritus and winner of the ACM Turing Award for his "major contributions to analysis of algorithms and the design of programming languages" <a id="cite-2" href="#ref-2">[2]</a>, argued for programming as an art form in his 1974 lecture *Computer Programming as an Art* <a id="cite-3" href="#ref-3">[3]</a>.
 
 <figure class="figure">
-  <img src="/knuth.jpg" alt="Picture of Donald Knuth at IBM 650 console 1960" width="80%" />
+  <img src="/knuth.jpg" alt="Picture of Donald Knuth at IBM 650 console 1960"  />
   <figcaption>Figure 2: Knuth at the console of the IBM 650 at Case, with basketball coach Heim; 1960 (www.bhavana.org.in)</figcaption>
 </figure>
 
@@ -64,8 +64,8 @@ Based on these examples, I am satisfied that I have convinced you that artistic 
 As a young adult, my excelling in a Japanese A-level based only on my own teaching led me to receive an unconditional offer at SOAS University of London to study Japanese, and I stumbled down that path instead for a while. However, it did not pull me fully away from code. Learning Japanese is actually what brought me into contact with the open source community for the first time. The Venn diagram connecting hardened Japanese language nerds and programmers is almost a circle. Programs like <a id="subs2srs" href="https://github.com/Ajatt-Tools/subs2srs">subs2srs</a> and <a id="morphman" href="https://github.com/kaegi/MorphMan">morphman</a> were fundamental to me being able to make the progress I did in the complex field of language mastery and continued to spark my fascination in learning (and inspire some projects I am creating today like <a href="https://github.com/mathmaxyz/japanese-with-text">Dokumate</a>). The latter was so bare bones it even required me to start editing the source code to achieve the functionality I wanted (I hadn't quite figured out that I could actually contribute these changes at the time).
 
 <figure class="figure">
-  <img src="/morphman.jpg" alt="screenshot from kanji kohii forums 2017" width="80%" />
-  <figcaption>figure 3: morphman plugin annoucement posted 2011 on now dead kanji koohii forum  - further down it metions struggling to use mecab, which i have now experienced in creating my dokumate application, that is a homage to this homebrew japanese language learnign software culture; 2017 capture (www.bhavana.org.in)</figcaption>
+  <img src="/morphman.jpg" alt="screenshot from kanji kohii forums 2017"  />
+  <figcaption>Figure 3: morphman plugin annoucement posted 2011 on now dead kanji koohii forum  - further down it metions struggling to use mecab, which i have now experienced in creating my dokumate application, that is a homage to this homebrew japanese language learnign software culture; 2017 capture (web.archive.org/web)</figcaption>
 </figure>
 
 Eventually, I found myself learning Python on the <a href="https://cscircles.cemc.uwaterloo.ca/">University of Waterloo website</a> in my spare time, while working a job as a Japanese language customer service operative at a games company and becoming increasingly frustrated with obvious bugs in the game that I had no power to fix. I found my love for the intricacies of syntax that I had gained as a student of languages served me well in learning to program. I was able to take in patterns quickly. I found the structure of code fascinating, beautiful even and I learnt to code Python at a similar lightning speed as I had learnt Japanese by myself before university.
@@ -73,7 +73,7 @@ Eventually, I found myself learning Python on the <a href="https://cscircles.cem
 However, I honestly thought working as a software engineer was a pipe dream for me at this point. I had made the wrong turn with university and there didn't feel like any real way to correct course. This was when, in 2021, I got an email from the Bright Network Technology Academy offering a free twelve week coding boot camp. I knew that twelve weeks was a stupidly tight schedule to bring myself up to a professional level. So I dropped all other commitments, moved home with my mother and became the sort of person who only answers texts after 10pm. Never in my life have I worked so hard for something. I programmed well into the night, seven days a week, never shying away from things I did not understand. By the end of it my health was shot, but I also had my first job as a Java engineer.
 
 <figure class="figure">
-  <img src="/ecowhat.jpg" alt="screenshot from kanji kohii forums 2017" width="80%" />
+  <img src="/ecowhat.jpg" alt="screenshot from kanji kohii forums 2017"  />
   <figcaption>Figure 4: The <a href="https://github.com/mathmaxyz/EcoWhat">Ecowhat</a> MP voting habit aggregation site is a project I made with classmates at the bootcamp</figcaption>
 </figure>
 

@@ -69,5 +69,11 @@
 		align-items: center;
 		gap: 10px;
 		font-style: italic;
+		margin: 5px;
+		text-align: center;
+	}
+
+	.prose :global(img) {
+		width: 100%;
 	}
 </style>
