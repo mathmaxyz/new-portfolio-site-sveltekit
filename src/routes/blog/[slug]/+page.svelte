@@ -9,7 +9,9 @@
 			<h2 class="article-heading">{data.title}</h2>
 			<span class="meta-text article-meta">{data.date}</span>
 		</div>
-		<a href="/blog" class="back-button"><BackIcon class="post-nav-icon" /> Back to posts</a>
+		<div class="back-button-container">
+			<a href="/blog" class="back-button"><BackIcon class="post-nav-icon" /> Back to posts</a>
+		</div>
 	</div>
 	<div class="prose">
 		<data.content />
@@ -21,6 +23,7 @@
 		background-size: cover;
 		background-position: top;
 		border: 5px solid var(--dark-green-transparent);
+		padding: 5px;
 	}
 
 	.article-heading {
@@ -78,8 +81,27 @@
 	}
 
 	@media (max-width: 769px) {
+		.article-heading {
+			font-size: 30px;
+			padding: 0 5px;
+		}
+
 		.prose :global(img) {
 			width: 100%;
+		}
+
+		.article-header {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.article-heading {
+			margin-bottom: 10px;
+		}
+
+		.back-button-container {
+			display: flex;
+			justify-content: flex-end;
 		}
 	}
 </style>
