@@ -50,6 +50,12 @@ button{
 	flex-direction: column;
 }
 
+@media(max-width: 769px){
+	.page-content{
+		padding: 0 0.125rem;
+	}
+}
+
 .main-content {
 	flex: 1;
 	width: 100%;
